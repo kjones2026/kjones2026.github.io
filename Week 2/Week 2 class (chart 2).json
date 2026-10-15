@@ -1,0 +1,16 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "description": "CPI rate in UK 2015-2025",
+  "data": {
+    "url": "https://raw.githubusercontent.com/kjones2026/kjones2026.github.io/refs/heads/main/CPIH%20ANNUAL%20RATE%2000_%20ALL%20ITEMS%202015%3D100-091026.csv"
+  },
+  "title": {"text": "CPI rate UK (2015-2025)", "subtitle": "source: ONS"},
+  "width": 300,
+  "height": 200,
+  "mark": {"type": "bar", "color": "blue", "size": 20},
+  "encoding": {
+    "x": {"field": "Year", "type": "temporal"},
+    "y": {"field": "CPI rate", "type": "quantitative"}
+  },
+  "config": {}
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "description": "A simple bar chart with embedded data.",
+  "title": "Chart for class (Week 2)",
+  "data": {
+    "values": [
+      {"Year": "2000", "Number": 28},
+      {"Year": "2005", "Number": 55},
+      {"Year": "2010", "Number": 43},
+      {"Year": "2015", "Number": 91},
+      {"Year": "2020", "Number": 81},
+      {"Year": "2025", "Number": 53}
+    ]
+  },
+  "width": 300,
+  "height": 200,
+  "mark": {"type": "bar", "color": "purple", "size": 40},
+  "encoding": {
+    "x": {"field": "Year", "type": "nominal", "axis": {"grid": false}},
+    "y": {"field": "Number", "type": "quantitative"}
+  },
+  "config": {}
+}
