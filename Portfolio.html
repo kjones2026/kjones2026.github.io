@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio | Billie Jones</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Karla:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/vega@6.4.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@6.4.3"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@7.3.0"></script>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main">
+      <a class="nav-name" href="index.html">Billie Jones</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="portfolio.html" aria-current="page">PP434 Weekly Tasks</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Portfolio</h1>
+    <p>
+      Billie |
+      <a href="https://www.linkedin.com/in/billiejones/">LinkedIn</a> |
+      <a href="https://www.github.com/billiejones">GitHub</a>
+    </p>
+    <p class="small">
+      This page acts as a portfolio for my work in the PP434 Data Visualisation course. I aim to produce 2 new charts per week, or more if required, and upload to my GitHub repository.
+    </p>
+
+    <!-- Week 1 -->
+    <section>
+      <div class="chart-description">
+        <h2>Week 1</h2>
+        <p>
+          In Week 1 I set up VS Code and GitHub, and published my first portfolio page.
+          The two charts below were provided as starting examples. My task was to embed
+          them into my own page, which involved linking each chart's Vega-Lite
+          specification to a <code>&lt;figure&gt;</code> element on the page using a matching id.
+        </p>
+      </div>
+
+      <div class="chart-row">
+        <figure id="Figure1"></figure>
+        <figure id="Figure2"></figure>
+      </div>
+    </section>
+
+    <!-- Week 2 -->
+    <section>
+      <div class="chart-description">
+        <h2>Week 2</h2>
+        <p>
+          In Week 2 I moved from using given charts to building my own. The first chart
+          started as an example from a Vega-Lite chart repository, which I adapted by
+          changing the colours, width and other styling. For the second chart I used real
+          data from the ONS (UK CPI rate 2015-2025). I cleaned the data in Excel, saved it
+          as a CSV, uploaded it to GitHub, and then built a chart that pulls in that data
+          through its raw URL.
+        </p>
+      </div>
+
+      <div class="chart-row stacked">
+        <figure id="Figure3"></figure>
+        <figure id="Figure4"></figure>
+      </div>
+    </section>
+
+
+        <!-- Week 3 -->
+    <section>
+      <div class="chart-description">
+        <h2>Week 3</h2>
+        <p>[still need to insert description here].</p>
+      </div>
+
+      <div class="chart-row">
+        <figure id="Figure5"></figure>
+        <figure id="Figure6"></figure>
+        <figure id="Figure7"></figure>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // Week 1
+    let chart1 = "Week 1/wk1_chart1.json";
+    let chart2 = "Week 1/wk1_chart2.json";
+
+    // Week 2
+    let chart3 = "Week%202/Week%202%20class%20(chart%201).json";
+    let chart4 = "Week%202/Week%202%20class%20(chart%202).json";
+
+    // Week 3
+     let chart5 = "Week%203/week3_shiller_mine.json";
+     let chart6 = "Week%203/grocery_spec.json";
+     let chart7 = "Week%203/person.json";
+
+    vegaEmbed('#Figure1', chart1).catch(console.error);
+    vegaEmbed('#Figure2', chart2).catch(console.error);
+    vegaEmbed('#Figure3', chart3).catch(console.error);
+    vegaEmbed('#Figure4', chart4).catch(console.error);
+    vegaEmbed('#Figure5', chart5).catch(console.error);
+    vegaEmbed('#Figure6', chart6).catch(console.error);
+    vegaEmbed('#Figure7', chart7).catch(console.error);
+  </script>
+
+</body>
+</html>

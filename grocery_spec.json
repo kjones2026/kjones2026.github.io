@@ -1,0 +1,49 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Grocery store income (illustrative example)",
+    "subtitle": "Placeholder numbers for practice, not real figures"
+  },
+  "data": {
+    "values": [
+      {
+        "store": "Tesco",
+        "income_bn": 60
+      },
+      {
+        "store": "Sainsbury's",
+        "income_bn": 38
+      },
+      {
+        "store": "Asda",
+        "income_bn": 25
+      },
+      {
+        "store": "Lidl",
+        "income_bn": 13
+      },
+      {
+        "store": "Waitrose",
+        "income_bn": 8
+      },
+      {
+        "store": "M&S",
+        "income_bn": 6
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "store",
+      "type": "nominal",
+      "sort": "-y",
+      "title": null
+    },
+    "y": {
+      "field": "income_bn",
+      "type": "quantitative",
+      "title": "Income (\u00a3bn)"
+    }
+  }
+}
