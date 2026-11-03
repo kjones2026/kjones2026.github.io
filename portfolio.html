@@ -40,10 +40,10 @@
       This page acts as a portfolio for my work in the PP434 Data Visualisation course. I aim to produce 2 new charts per week, or more if required, and upload to my GitHub repository.
     </p>
 
-    <!-- Week 1 -->
+    <!-- CC1 (Week 1) -->
     <section>
       <div class="chart-description">
-        <h2>Week 1</h2>
+        <h2>CC1. Hosting. Display charts in your own site.</h2>
         <p>
           In Week 1 I set up VS Code and GitHub, and published my first portfolio page.
           The two charts below were provided as starting examples. My task was to embed
@@ -53,15 +53,21 @@
       </div>
 
       <div class="chart-row">
-        <figure id="Figure1"></figure>
-        <figure id="Figure2"></figure>
+        <div class="chart-item">
+          <h3>Chart 1</h3>
+          <figure id="Figure1"></figure>
+        </div>
+        <div class="chart-item">
+          <h3>Chart 2</h3>
+          <figure id="Figure2"></figure>
+        </div>
       </div>
     </section>
 
-    <!-- Week 2 -->
+    <!-- CC2 (Week 2) -->
     <section>
       <div class="chart-description">
-        <h2>Week 2</h2>
+        <h2>CC2. Building. Create your own visualisations</h2>
         <p>
           In Week 2 I moved from using given charts to building my own. The first chart
           started as an example from a Vega-Lite chart repository, which I adapted by
@@ -73,40 +79,114 @@
       </div>
 
       <div class="chart-row stacked">
-        <figure id="Figure3"></figure>
-        <figure id="Figure4"></figure>
+        <div class="chart-item">
+          <h3>Chart 1</h3>
+          <figure id="Figure3"></figure>
+        </div>
+        <div class="chart-item">
+          <h3>Chart 2</h3>
+          <figure id="Figure4"></figure>
+        </div>
       </div>
     </section>
 
-
-        <!-- Week 3 -->
+    <!-- CC3 (Week 3) -->
     <section>
       <div class="chart-description">
-        <h2>Week 3</h2>
+        <h2>CC3. Policy debate. Use a visualisation in policy commentary</h2>
         <p>[still need to insert description here].</p>
       </div>
 
       <div class="chart-row">
-        <figure id="Figure5"></figure>
-        <figure id="Figure6"></figure>
-        <figure id="Figure7"></figure>
+        <div class="chart-item">
+          <h3>Chart 1</h3>
+          <figure id="Figure5"></figure>
+        </div>
+        <div class="chart-item">
+          <h3>Chart 2</h3>
+          <figure id="Figure6"></figure>
+        </div>
+        <div class="chart-item">
+          <h3>Chart 3</h3>
+          <figure id="Figure7"></figure>
+        </div>
       </div>
     </section>
+
+    <!-- CC4 (Week 4) -->
+    <section>
+      <div class="chart-description">
+        <h2>CC4. Replication. Re-create, then improve, someone else's chart</h2>
+      </div>
+
+      <div class="chart-row stacked">
+
+        <!-- 1. Original chart -->
+        <div class="chart-item">
+          <h3>Original chart</h3>
+          <img src="Week%204/cc4_original.png" alt="Stacked column chart of deaths in armed conflicts by region, 1989 to 2026, from Our World in Data" style="max-width:100%;">
+          <p class="small">Source: Uppsala Conflict Data Program (2026); geoBoundaries (2023), processed by Our World in Data. CC BY 4.0.</p>
+          <p>
+            This is the chart I took from Our World in Data, showing deaths in armed conflicts
+            by region from 1989 to 2026. The issues I recognise are:
+          </p>
+          <ol>
+            <li>The 2026 bar covers only the first half of the year but looks like deaths have collapsed.</li>
+            <li>Stacking means only the bottom region shares a baseline, so it is hard to compare Europe, the Middle East and Asia.</li>
+            <li>The tan and salmon colours are close in lightness, which can be hard for colour-blind readers.</li>
+            <li>The title names the topic without stating a finding.</li>
+          </ol>
+        </div>
+
+        <!-- 2. Replicated chart -->
+        <div class="chart-item">
+          <h3>Replicated chart</h3>
+          <figure id="Figure8"></figure>
+          <p>
+            I replicated the chart by downloading the CSV from Our World in Data and saving it
+            to my GitHub repository. The dates did not need amending, as the data only contains
+            years rather than full dates. I renamed the deaths column to "deaths" for simplicity.
+            I then wrote a Vega-Lite JSON file in VS Code (<code>cc4_replica.json</code>) that
+            loads the CSV, filters it to four regions, and tidies the region names. It uses a
+            stacked bar mark, with Americas at the bottom, and I styled it to match the
+            original: white background, serif title, dashed grid lines, alternate-year labels
+            and similar colours. I embedded it with <code>vegaEmbed</code>.
+          </p>
+        </div>
+
+        <!-- 3. Improved chart -->
+        <div class="chart-item">
+          <h3>Improved chart</h3>
+          <figure id="Figure9"></figure>
+          <p> I copied the replica's JSON, changed the mark to line, filtered to 2000+, added 
+            layers for dashed 2026 and direct labels, and rewrote the title. 
+            The stacked columns in the original chart hid regional comparison and 2026 is only provides 
+            6-months of data, so I used lines from 2000, labelled directly, dashed 2026 and added a finding-led headline.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
   </main>
 
   <script>
     // Week 1
-    let chart1 = "Week 1/wk1_chart1.json";
-    let chart2 = "Week 1/wk1_chart2.json";
+    let chart1 = "Week%201/wk1_chart1.json";
+    let chart2 = "Week%201/wk1_chart2.json";
 
     // Week 2
     let chart3 = "Week%202/Week%202%20class%20(chart%201).json";
     let chart4 = "Week%202/Week%202%20class%20(chart%202).json";
 
     // Week 3
-     let chart5 = "Week%203/week3_shiller_mine.json";
-     let chart6 = "Week%203/grocery_spec.json";
-     let chart7 = "Week%203/person.json";
+    let chart5 = "Week%203/week3_shiller_mine.json";
+    let chart6 = "Week%203/grocery_spec.json";
+    let chart7 = "Week%203/person.json";
+
+    // Week 4
+    let chart8 = "Week%204/cc4_replica.json";
+    let chart9 = "Week%204/cc4_improved.json";
 
     vegaEmbed('#Figure1', chart1).catch(console.error);
     vegaEmbed('#Figure2', chart2).catch(console.error);
@@ -115,7 +195,10 @@
     vegaEmbed('#Figure5', chart5).catch(console.error);
     vegaEmbed('#Figure6', chart6).catch(console.error);
     vegaEmbed('#Figure7', chart7).catch(console.error);
+    vegaEmbed('#Figure8', chart8).catch(console.error);
+    vegaEmbed('#Figure9', chart9).catch(console.error);
   </script>
 
 </body>
+
 </html>

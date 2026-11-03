@@ -1,0 +1,70 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 640,
+  "height": 300,
+  "title": {
+    "text": "Deaths in armed conflicts by region",
+    "subtitle": [
+      "Reported deaths of combatants and civilians due to fighting.",
+      "Data for 2026 is incomplete."
+    ],
+    "font": "Georgia",
+    "fontSize": 20,
+    "anchor": "start",
+    "frame": "group",
+    "subtitleColor": "#5b5b5b"
+  },
+  "data": {"url": "Week%204/cc4_conflict_deaths.csv"},
+  "transform": [
+    {"filter": {"field": "Entity", "oneOf": [
+      "Asia and Oceania (UCDP)", "Middle East (UCDP)", "Europe (UCDP)", "Americas (UCDP)"
+    ]}},
+    {"calculate": "replace(datum.Entity, ' (UCDP)', '')", "as": "region"},
+    {"calculate": "indexof(['Americas','Europe','Middle East','Asia and Oceania'], datum.region)", "as": "stackOrder"}
+  ],
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "ordinal",
+      "axis": {
+        "title": "",
+        "labelAngle": 0,
+        "labelColor": "#596870",
+        "labelExpr": "datum.value % 2 == 1 ? datum.value : ''",
+        "ticks": false,
+        "domain": false
+      }
+    },
+    "y": {
+      "field": "deaths",
+      "type": "quantitative",
+      "stack": "zero",
+      "axis": {
+        "title": "",
+        "format": ",.0f",
+        "labelColor": "#596870",
+        "gridColor": "#dddddd",
+        "gridDash": [3, 3],
+        "domain": false,
+        "ticks": false
+      }
+    },
+    "color": {
+      "field": "region",
+      "type": "nominal",
+      "scale": {
+        "domain": ["Asia and Oceania", "Middle East", "Europe", "Americas"],
+        "range": ["#2A9D8F", "#C9A66B", "#6B84B2", "#E8857A"]
+      },
+      "legend": {"orient": "right", "title": null, "symbolType": "square"}
+    },
+    "order": {"field": "stackOrder", "type": "quantitative"},
+    "tooltip": [
+      {"field": "Year", "type": "ordinal"},
+      {"field": "region", "type": "nominal"},
+      {"field": "deaths", "type": "quantitative", "format": ","}
+    ]
+  },
+  "config": {"view": {"strokeWidth": 0}}
+}
