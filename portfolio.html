@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Karla:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
 
   <script src="https://cdn.jsdelivr.net/npm/vega@6.4.0"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@6.4.3"></script>
@@ -106,10 +106,6 @@
           <h3>Chart 2</h3>
           <figure id="Figure6"></figure>
         </div>
-        <div class="chart-item">
-          <h3>Chart 3</h3>
-          <figure id="Figure7"></figure>
-        </div>
       </div>
     </section>
 
@@ -158,10 +154,8 @@
         <div class="chart-item">
           <h3>Improved chart</h3>
           <figure id="Figure9"></figure>
-          <p> I copied the replica's JSON, changed the mark to line, filtered to 2000+, added 
-            layers for dashed 2026 and direct labels, and rewrote the title. 
-            The stacked columns in the original chart hid regional comparison and 2026 is only provides 
-            6-months of data, so I used lines from 2000, labelled directly, dashed 2026 and added a finding-led headline.
+          <p>
+            I copied the replica's JSON, changed the mark to line, filtered to 2000+, added layers for dashed 2026 and direct labels, and rewrote the title.
           </p>
         </div>
 
@@ -182,7 +176,6 @@
     // Week 3
     let chart5 = "Week%203/week3_shiller_mine.json";
     let chart6 = "Week%203/grocery_spec.json";
-    let chart7 = "Week%203/person.json";
 
     // Week 4
     let chart8 = "Week%204/cc4_replica.json";
@@ -194,7 +187,6 @@
     vegaEmbed('#Figure4', chart4).catch(console.error);
     vegaEmbed('#Figure5', chart5).catch(console.error);
     vegaEmbed('#Figure6', chart6).catch(console.error);
-    vegaEmbed('#Figure7', chart7).catch(console.error);
     vegaEmbed('#Figure8', chart8).catch(console.error);
     vegaEmbed('#Figure9', chart9).catch(console.error);
   </script>
