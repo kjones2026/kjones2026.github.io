@@ -1,0 +1,55 @@
+areacd,areanm,nation,year,weekly_pay,cv
+S12000033,Aberdeen City,Scotland,2025,781.7,3.8
+S12000034,Aberdeenshire,Scotland,2025,824.8,4.5
+S12000041,Angus,Scotland,2025,748.1,6.0
+S12000035,Argyll and Bute,Scotland,2025,725.8,6.1
+S12000036,City of Edinburgh,Scotland,2025,819.8,3.1
+S12000005,Clackmannanshire,Scotland,2025,764.9,7.2
+S12000006,Dumfries and Galloway,Scotland,2025,722.5,5.7
+S12000042,Dundee City,Scotland,2025,676.3,4.6
+S12000008,East Ayrshire,Scotland,2025,733.0,5.3
+S12000045,East Dunbartonshire,Scotland,2025,909.0,5.8
+S12000010,East Lothian,Scotland,2025,737.2,5.7
+S12000011,East Renfrewshire,Scotland,2025,896.2,6.8
+S12000014,Falkirk,Scotland,2025,741.2,5.2
+S12000047,Fife,Scotland,2025,763.3,2.2
+S12000049,Glasgow City,Scotland,2025,745.5,2.9
+S12000017,Highland,Scotland,2025,775.1,3.7
+S12000018,Inverclyde,Scotland,2025,733.2,6.3
+S12000019,Midlothian,Scotland,2025,762.2,4.9
+S12000020,Moray,Scotland,2025,658.8,7.2
+S12000013,Na h-Eileanan Siar,Scotland,2025,780.3,11.0
+S12000021,North Ayrshire,Scotland,2025,791.2,3.9
+S12000050,North Lanarkshire,Scotland,2025,775.1,2.4
+S12000023,Orkney Islands,Scotland,2025,786.0,10.0
+S12000048,Perth and Kinross,Scotland,2025,758.8,5.8
+S12000038,Renfrewshire,Scotland,2025,797.1,4.9
+S12000026,Scottish Borders,Scotland,2025,707.7,5.3
+S12000027,Shetland Islands,Scotland,2025,863.6,12.0
+S12000028,South Ayrshire,Scotland,2025,870.3,4.9
+S12000029,South Lanarkshire,Scotland,2025,798.3,3.7
+S12000030,Stirling,Scotland,2025,832.9,7.2
+S12000039,West Dunbartonshire,Scotland,2025,737.1,7.1
+S12000040,West Lothian,Scotland,2025,768.9,4.5
+W06000019,Blaenau Gwent,Wales,2025,711.2,5.2
+W06000013,Bridgend,Wales,2025,737.7,4.7
+W06000018,Caerphilly,Wales,2025,709.8,4.1
+W06000015,Cardiff,Wales,2025,712.0,3.4
+W06000010,Carmarthenshire,Wales,2025,732.6,4.3
+W06000008,Ceredigion,Wales,2025,682.0,7.2
+W06000003,Conwy,Wales,2025,726.4,7.6
+W06000004,Denbighshire,Wales,2025,660.0,6.6
+W06000005,Flintshire,Wales,2025,770.5,5.7
+W06000002,Gwynedd,Wales,2025,669.2,6.0
+W06000001,Isle of Anglesey,Wales,2025,692.7,5.8
+W06000024,Merthyr Tydfil,Wales,2025,685.3,6.1
+W06000021,Monmouthshire,Wales,2025,811.8,8.3
+W06000012,Neath Port Talbot,Wales,2025,693.0,4.7
+W06000022,Newport,Wales,2025,727.8,3.8
+W06000009,Pembrokeshire,Wales,2025,736.3,5.5
+W06000023,Powys,Wales,2025,705.4,6.3
+W06000016,Rhondda Cynon Taf,Wales,2025,665.5,3.9
+W06000011,Swansea,Wales,2025,718.8,3.5
+W06000020,Torfaen,Wales,2025,757.0,4.0
+W06000014,Vale of Glamorgan,Wales,2025,791.0,6.0
+W06000006,Wrexham,Wales,2025,694.1,5.1
