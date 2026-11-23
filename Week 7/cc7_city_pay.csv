@@ -1,0 +1,13 @@
+place,nation,latitude,longitude,weekly_pay,area_type
+Manchester,England,53.4808,-2.2426,715.6,Council area
+Liverpool,England,53.4084,-2.9916,726.7,Council area
+Birmingham,England,52.4862,-1.8904,707.9,Council area
+Leeds,England,53.8008,-1.5491,723.0,Council area
+London,England,51.5074,-0.1278,902.7,Region (Greater London)
+Aberdeen,Scotland,57.1497,-2.0943,781.7,Council area
+Edinburgh,Scotland,55.9533,-3.1883,819.8,Council area
+Dundee,Scotland,56.462,-2.9707,676.3,Council area
+Glasgow,Scotland,55.8642,-4.2518,745.5,Council area
+Cardiff,Wales,51.4816,-3.1791,712.0,Council area
+Newport,Wales,51.5842,-2.9977,727.8,Council area
+Swansea,Wales,51.6214,-3.9436,718.8,Council area
