@@ -1,0 +1,118 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 640,
+  "height": 320,
+  "padding": {"left": 5, "top": 5, "bottom": 5, "right": 105},
+  "title": {
+    "text": [
+      "Since 2022, home building has held steady at about 175,000 a year",
+      "while population growth swung. The Housing Accord needs 240,000 a year."
+    ],
+    "subtitle": [
+      "Australia. Each point is the total for the year to that quarter. Homes needed = people added / 2.5 people per home.",
+      "Completions are gross (before demolitions). The Accord pace is shown from July 2024, when the Accord began."
+    ],
+    "anchor": "start",
+    "frame": "group",
+    "fontSize": 16,
+    "subtitleColor": "#596870"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/kjones2026/kjones2026.github.io/refs/heads/main/Week%203/CC3%20homes%20completed_population.csv"
+  },
+  "transform": [
+    {"calculate": "datum.people_added / 2.5", "as": "homes_needed_q"},
+    {
+      "window": [
+        {"op": "sum", "field": "homes_needed_q", "as": "homes_needed_year"},
+        {"op": "sum", "field": "homes_completed", "as": "homes_completed_year"},
+        {"op": "count", "as": "quarters"}
+      ],
+      "frame": [-3, 0]
+    },
+    {"filter": "datum.quarters == 4"},
+    {"fold": ["homes_needed_year", "homes_completed_year"], "as": ["measure", "value"]},
+    {
+      "calculate": "datum.measure == 'homes_completed_year' ? 'Homes completed' : 'Homes needed for the people added'",
+      "as": "series"
+    },
+    {"calculate": "'Year to ' + timeFormat(toDate(datum.date), '%b %Y')", "as": "period"}
+  ],
+  "layer": [
+    {
+      "mark": {"type": "line", "strokeWidth": 2.5},
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "temporal",
+          "axis": {"title": null, "format": "%Y", "tickCount": {"interval": "year", "step": 2}, "labelColor": "#596870", "grid": false}
+        },
+        "y": {
+          "field": "value",
+          "type": "quantitative",
+          "scale": {"domain": [0, 280000]},
+          "axis": {"title": "Homes per year", "format": ",.0f", "gridColor": "#e5e5e5", "labelColor": "#596870"}
+        },
+        "color": {
+          "field": "series",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Homes completed", "Homes needed for the people added"],
+            "range": ["#0072B2", "#D55E00"]
+          },
+          "legend": {
+            "title": null,
+            "orient": "top",
+            "direction": "horizontal",
+            "symbolType": "stroke",
+            "symbolStrokeWidth": 3,
+            "symbolSize": 400,
+            "labelFontSize": 12,
+            "labelLimit": 400,
+            "columnPadding": 18
+          }
+        }
+      }
+    },
+    {
+      "mark": {"type": "point", "opacity": 0, "size": 160},
+      "encoding": {
+        "x": {"field": "date", "type": "temporal"},
+        "y": {"field": "value", "type": "quantitative"},
+        "color": {"field": "series", "type": "nominal", "legend": null},
+        "tooltip": [
+          {"field": "series", "type": "nominal", "title": "Measure"},
+          {"field": "period", "type": "nominal", "title": "Period"},
+          {"field": "value", "type": "quantitative", "title": "Homes", "format": ",.0f"}
+        ]
+      }
+    },
+    {
+      "data": {"values": [{"start": "2024-07-01", "end": "2026-03-31", "pace": 240000}]},
+      "mark": {"type": "rule", "strokeDash": [6, 4], "strokeWidth": 2, "color": "#555555"},
+      "encoding": {
+        "x": {"field": "start", "type": "temporal"},
+        "x2": {"field": "end"},
+        "y": {"field": "pace", "type": "quantitative"}
+      }
+    },
+    {
+      "data": {"values": [{"end": "2026-03-31", "pace": 240000}]},
+      "mark": {
+        "type": "text",
+        "text": ["Housing Accord", "pace: 240,000"],
+        "align": "left",
+        "baseline": "middle",
+        "dx": 8,
+        "fontSize": 11,
+        "fontWeight": "bold",
+        "color": "#555555"
+      },
+      "encoding": {
+        "x": {"field": "end", "type": "temporal"},
+        "y": {"field": "pace", "type": "quantitative"}
+      }
+    }
+  ],
+  "config": {"view": {"stroke": null}}
+}

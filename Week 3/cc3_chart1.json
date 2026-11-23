@@ -1,0 +1,64 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 640,
+  "height": 320,
+  "title": {
+    "text": ["Net overseas migration peaked in early 2023 and has fallen,", "but is still above pre-pandemic levels"],
+    "subtitle": [
+      "People per quarter, Australia (ABS net overseas migration, not arrivals minus departures).",
+      "The March quarter is usually the highest, so compare like with like. Budget forecast (annual): 245,000 in 2026-27, 225,000 in 2027-28."
+    ],
+    "anchor": "start",
+    "frame": "group",
+    "fontSize": 16,
+    "subtitleColor": "#596870"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/kjones2026/kjones2026.github.io/refs/heads/main/Week%203/cc3_nom_quarterly.csv"
+  },
+  "layer": [
+    {
+      "mark": {"type": "bar", "color": "#6B84B2"},
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "temporal",
+          "timeUnit": "yearquarter",
+          "axis": {"title": null, "format": "%Y", "tickCount": {"interval": "year", "step": 2}, "labelColor": "#596870", "grid": false}
+        },
+        "y": {
+          "field": "net_overseas_migration",
+          "type": "quantitative",
+          "axis": {"title": "People per quarter", "format": ",.0f", "gridColor": "#e5e5e5", "labelColor": "#596870"}
+        },
+        "tooltip": [
+          {"field": "date", "type": "temporal", "timeUnit": "yearquarter", "title": "Quarter", "format": "%b %Y"},
+          {"field": "net_overseas_migration", "type": "quantitative", "title": "Net overseas migration", "format": ",.0f"}
+        ]
+      }
+    },
+    {
+      "data": {"values": [
+        {"date": "2023-03-31", "net_overseas_migration": 165500, "label": "Peak: 165,500 (Mar 2023)"}
+      ]},
+      "mark": {"type": "text", "dy": -8, "fontSize": 11, "fontWeight": "bold", "color": "#1b3a57", "align": "center"},
+      "encoding": {
+        "x": {"field": "date", "type": "temporal", "timeUnit": "yearquarter"},
+        "y": {"field": "net_overseas_migration", "type": "quantitative"},
+        "text": {"field": "label"}
+      }
+    },
+    {
+      "data": {"values": [
+        {"date": "2026-03-31", "net_overseas_migration": 101000, "label": "Latest: 101,000"}
+      ]},
+      "mark": {"type": "text", "dy": -18, "fontSize": 10.5, "fontWeight": "bold", "color": "#1b3a57", "align": "center"},
+      "encoding": {
+        "x": {"field": "date", "type": "temporal", "timeUnit": "yearquarter"},
+        "y": {"field": "net_overseas_migration", "type": "quantitative"},
+        "text": {"field": "label"}
+      }
+    }
+  ],
+  "config": {"view": {"stroke": null}}
+}

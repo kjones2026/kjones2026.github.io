@@ -94,17 +94,19 @@
     <section>
       <div class="chart-description">
         <h2>CC3. Policy debate. Use a visualisation in policy commentary</h2>
-        <p>[still need to insert description here].</p>
+        <p>Many Australians blame migration for the housing crisis. How much of the shortage does migration explain, and how much is homes not built?</p>
       </div>
 
-      <div class="chart-row">
+      <div class="chart-row stacked">
         <div class="chart-item">
           <h3>Chart 1</h3>
           <figure id="Figure5"></figure>
+          <p>Net overseas migration has fallen from its 2023 peak but remains above pre-pandemic levels. The ABS warns arrivals minus departures overstates it.</p>
         </div>
         <div class="chart-item">
           <h3>Chart 2</h3>
           <figure id="Figure6"></figure>
+          <p>Homes needed peaked near 265,000 in 2023, well above completions. Completions have stayed near 175,000, about 66,000 below the Accord pace.</p>
         </div>
       </div>
     </section>
@@ -141,7 +143,8 @@
           <p>
             I replicated the chart by downloading the CSV from Our World in Data and saving it
             to my GitHub repository. The dates did not need amending, as the data only contains
-            years rather than full dates. I renamed the deaths column to "deaths" for simplicity.
+            years rather than full dates. I created a <code>deaths</code> field from the original
+            <code>Deaths in armed conflicts</code> column using a calculate step, for simplicity.
             I then wrote a Vega-Lite JSON file in VS Code (<code>cc4_replica.json</code>) that
             loads the CSV, filters it to four regions, and tidies the region names. It uses a
             stacked bar mark, with Americas at the bottom, and I styled it to match the
@@ -155,10 +158,125 @@
           <h3>Improved chart</h3>
           <figure id="Figure9"></figure>
           <p>
-            I copied the replica's JSON, changed the mark to line, filtered to 2000+, added layers for dashed 2026 and direct labels, and rewrote the title.
+            I switched to lines for 2005 to 2025, replaced end labels with a legend, used colour-blind-safe colours, dropped incomplete 2026, and rewrote the title.
           </p>
         </div>
 
+      </div>
+    </section>
+
+    <!-- CC5 (Week 5) -->
+    <section>
+      <div class="chart-description">
+        <h2>CC5. Accessing data: (1) API, (2) Scraper</h2>
+      </div>
+
+      <div class="chart-row stacked">
+
+        <!-- 1. API chart -->
+        <div class="chart-item">
+          <h3>API chart</h3>
+          <figure id="Figure10"></figure>
+          <p>
+            <strong>Base URL:</strong>
+            <code>https://api.worldbank.org/v2/country/GBR/indicator/FP.CPI.TOTL.ZG</code>.
+            <code>api.worldbank.org/v2</code> is the World Bank API (version 2),
+            <code>country/GBR</code> selects the United Kingdom, and
+            <code>indicator/FP.CPI.TOTL.ZG</code> selects annual consumer price inflation (%).
+          </p>
+          <p>
+            <strong>Elements needed to call the data:</strong> a country code (<code>GBR</code>),
+            an indicator code (<code>FP.CPI.TOTL.ZG</code>), and the options
+            <code>format=json</code> and <code>per_page=200</code>, joined with
+            <code>?</code> and <code>&amp;</code>. No API key is needed.
+          </p>
+          <p>
+            <strong>Data returned:</strong> JSON. The first item is a metadata block (page, total,
+            last updated) and the second item is the list of observations, which is why the chart
+            reads <code>property: "1"</code>. The data is tidy: one row per year, with
+            <code>date</code> (a text year, which the chart converts to a number) and
+            <code>value</code> (the inflation rate). Some recent years are <code>null</code>,
+            so the chart filters them out.
+          </p>
+          <p>
+            <strong>Full URL used in the chart:</strong>
+            <a href="https://api.worldbank.org/v2/country/GBR/indicator/FP.CPI.TOTL.ZG?format=json&per_page=200"
+               style="word-break: break-all;">
+              https://api.worldbank.org/v2/country/GBR/indicator/FP.CPI.TOTL.ZG?format=json&amp;per_page=200
+            </a>
+          </p>
+        </div>
+
+        <!-- 2. Scraper chart -->
+        <div class="chart-item">
+          <h3>Scraper chart</h3>
+          <p>
+            <a href="https://colab.research.google.com/drive/1jAiX7pSHjHwaPwute_bYhAbeU6VOILjq">
+              Google Colab notebook (scraper and cleaning)
+            </a>
+          </p>
+          <figure id="Figure11"></figure>
+          <p>Scraped ESPN's Knicks stats with pandas. ESPN blocked Colab, so I parsed a saved page, merged split tables, cleaned names, reshaped to tidy format.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CC6 (Week 6) -->
+    <section>
+      <div class="chart-description">
+        <h2>CC6. Loops. Build a UK devolution dashboard</h2>
+        <p>
+          Median gross weekly pay for full-time employees in Cardiff, Manchester, Birmingham,
+          Liverpool, Leeds and Greater London, 2008 to 2025 (ONS Annual Survey of Hours and
+          Earnings, via the Nomis API). A Python loop in Colab downloaded one JSON file per
+          place, and a JavaScript loop embeds the six charts.
+        </p>
+        <p>
+          <a href="Week%206/DevolutionDashboard.html">Open the devolution dashboard</a> |
+          <a href="https://colab.research.google.com/drive/1fz-TLH9vSuVeDWfM_kAWaBJA9QnsBTjp?usp=sharing">
+            Google Colab notebook (loop download)
+          </a>
+        </p>
+      </div>
+    </section>
+
+    <!-- CC7 (Week 7) -->
+    <section>
+      <div class="chart-description">
+        <h2>CC7. Maps. Base maps and choropleths</h2>
+        <p>
+          Two maps of median gross weekly pay for full-time employees living in each place, April 2025
+          (ONS Annual Survey of Hours and Earnings, downloaded through the Nomis API). The coordinates
+          map shows 12 major cities in England, Scotland and Wales. The choropleth shades all 12 UK
+          regions: the nine English regions plus Scotland, Wales and Northern Ireland. Belfast is
+          missing from the coordinates map because Northern Ireland's districts are not in the Nomis
+          council list.
+        </p>
+        <p>
+          <a href="https://colab.research.google.com/drive/1BoZa35xA532LpQRNP3lyHsZYc7wCYgWv?usp=sharing">
+            Google Colab notebook (download and cleaning)
+          </a>
+        </p>
+      </div>
+
+      <div class="chart-row stacked">
+        <div class="chart-item">
+          <h3>Coordinates map</h3>
+          <figure id="Figure12"></figure>
+          <p>
+            Seven of the eleven council-area cities pay less than their region or nation's average.
+            Edinburgh, Aberdeen, Leeds and Newport pay more.
+          </p>
+        </div>
+        <div class="chart-item">
+          <h3>Choropleth map</h3>
+          <figure id="Figure13"></figure>
+          <p>
+            Pay is highest in London (£903 a week) and lowest in the North East (£692).
+            Scotland ranks fourth of 12, while Wales and Northern Ireland rank ninth and tenth.
+          </p>
+        </div>
       </div>
     </section>
 
@@ -174,12 +292,22 @@
     let chart4 = "Week%202/Week%202%20class%20(chart%202).json";
 
     // Week 3
-    let chart5 = "Week%203/week3_shiller_mine.json";
-    let chart6 = "Week%203/grocery_spec.json";
+    let chart5 = "Week%203/cc3_chart1.json";
+    let chart6 = "Week%203/cc3_chart2.json";
 
     // Week 4
     let chart8 = "Week%204/cc4_replica.json";
     let chart9 = "Week%204/cc4_improved.json";
+
+    // Week 5
+    let chart10 = "Week%205/cc5_api.json";
+    let chart11 = "Week%205/cc5_scraper.json";
+
+    // Week 6: the six charts are embedded by a loop on Week 6/DevolutionDashboard.html
+
+    // Week 7
+    let chart12 = "Week%207/cc7_coordinates_map.json";
+    let chart13 = "Week%207/cc7_choropleth_map.json";
 
     vegaEmbed('#Figure1', chart1).catch(console.error);
     vegaEmbed('#Figure2', chart2).catch(console.error);
@@ -189,6 +317,10 @@
     vegaEmbed('#Figure6', chart6).catch(console.error);
     vegaEmbed('#Figure8', chart8).catch(console.error);
     vegaEmbed('#Figure9', chart9).catch(console.error);
+    vegaEmbed('#Figure10', chart10).catch(console.error);
+    vegaEmbed('#Figure11', chart11).catch(console.error);
+    vegaEmbed('#Figure12', chart12).catch(console.error);
+    vegaEmbed('#Figure13', chart13).catch(console.error);
   </script>
 
 </body>

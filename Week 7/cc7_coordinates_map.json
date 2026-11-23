@@ -1,0 +1,74 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 430,
+  "height": 600,
+  "title": {
+    "text": ["London and Edinburgh pay most;", "Dundee pays least"],
+    "subtitle": [
+      "Median gross weekly pay, full-time employees living in each place, April 2025.",
+      "London is the Greater London region; the rest are council areas."
+    ],
+    "anchor": "start",
+    "frame": "group",
+    "subtitleColor": "#596870"
+  },
+  "data": {"url": "https://raw.githubusercontent.com/kjones2026/kjones2026.github.io/refs/heads/main/Week%207/cc7_city_pay.csv"},
+  "projection": {"type": "transverseMercator", "rotate": [2, 0, 0]},
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/jhellingsdata/map-data/refs/heads/main/gbr/CTRY_UK.json",
+        "format": {"type": "topojson", "feature": "geog"}
+      },
+      "mark": {"type": "geoshape", "fill": "#e3e3e3", "stroke": "white", "strokeWidth": 0.8}
+    },
+    {
+      "mark": {"type": "circle", "opacity": 0.95, "stroke": "#1b3a57", "strokeWidth": 0.8},
+      "encoding": {
+        "longitude": {"field": "longitude", "type": "quantitative"},
+        "latitude": {"field": "latitude", "type": "quantitative"},
+        "size": {"field": "weekly_pay", "type": "quantitative", "scale": {"zero": true, "range": [60, 380]}, "legend": null},
+        "color": {
+          "field": "weekly_pay",
+          "type": "quantitative",
+          "scale": {"scheme": "blues", "domain": [600, 920]},
+          "legend": {"title": "Weekly pay (£)", "format": ",.0f", "orient": "right"}
+        },
+        "tooltip": [
+          {"field": "place", "title": "Place"},
+          {"field": "nation", "title": "Nation"},
+          {"field": "area_type", "title": "Area type"},
+          {"field": "weekly_pay", "type": "quantitative", "format": ",.0f", "title": "Weekly pay (£)"}
+        ]
+      }
+    },
+    {
+      "transform": [{"filter": "indexof(['Liverpool', 'Glasgow', 'Swansea', 'Cardiff'], datum.place) < 0"}],
+      "mark": {"type": "text", "align": "left", "dx": 8, "fontSize": 10.5, "color": "#333333"},
+      "encoding": {
+        "longitude": {"field": "longitude", "type": "quantitative"},
+        "latitude": {"field": "latitude", "type": "quantitative"},
+        "text": {"field": "place", "type": "nominal"}
+      }
+    },
+    {
+      "transform": [{"filter": "indexof(['Liverpool', 'Glasgow', 'Swansea'], datum.place) >= 0"}],
+      "mark": {"type": "text", "align": "right", "dx": -8, "fontSize": 10.5, "color": "#333333"},
+      "encoding": {
+        "longitude": {"field": "longitude", "type": "quantitative"},
+        "latitude": {"field": "latitude", "type": "quantitative"},
+        "text": {"field": "place", "type": "nominal"}
+      }
+    },
+    {
+      "transform": [{"filter": "datum.place == 'Cardiff'"}],
+      "mark": {"type": "text", "align": "center", "dy": 13, "fontSize": 10.5, "color": "#333333"},
+      "encoding": {
+        "longitude": {"field": "longitude", "type": "quantitative"},
+        "latitude": {"field": "latitude", "type": "quantitative"},
+        "text": {"field": "place", "type": "nominal"}
+      }
+    }
+  ],
+  "config": {"view": {"stroke": null}}
+}

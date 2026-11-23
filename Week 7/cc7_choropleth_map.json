@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 460,
+  "height": 620,
+  "title": {
+    "text": ["Median gross weekly pay of full-time employees across the United Kingdom"],
+    "subtitle": [
+      "Pay is highest in London (£903 a week) and lowest in the North East (£692)"
+    ],
+    "anchor": "start",
+    "frame": "group",
+    "subtitleColor": "#596870"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/ONSdigital/uk-topojson/refs/heads/main/output/topo.json",
+    "format": {"type": "topojson", "feature": "rgn"}
+  },
+  "projection": {"type": "transverseMercator", "rotate": [2, 0, 0]},
+  "transform": [
+    {
+      "lookup": "properties.areacd",
+      "from": {
+        "data": {"url": "https://raw.githubusercontent.com/kjones2026/kjones2026.github.io/refs/heads/main/Week%207/cc7_regions_pay.csv"},
+        "key": "areacd",
+        "fields": ["areanm", "weekly_pay"]
+      }
+    }
+  ],
+  "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 0.8},
+  "encoding": {
+    "color": {
+      "field": "weekly_pay",
+      "type": "quantitative",
+      "scale": {"scheme": "blues"},
+      "legend": {"title": "Weekly pay (£)", "format": ",.0f", "orient": "right"}
+    },
+    "tooltip": [
+      {"field": "areanm", "type": "nominal", "title": "Region"},
+      {"field": "weekly_pay", "type": "quantitative", "title": "Weekly pay (£)", "format": ",.0f"}
+    ]
+  },
+  "config": {"view": {"stroke": null}}
+}
