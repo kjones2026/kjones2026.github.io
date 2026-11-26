@@ -1,0 +1,151 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 300,
+      "continuousHeight": 300
+    }
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/kjones2026/kjones2026.github.io/refs/heads/main/Project/shs_clients.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "mark": {
+    "type": "line",
+    "color": "#c8102e",
+    "point": {
+      "color": "#c8102e"
+    }
+  },
+  "encoding": {
+    "tooltip": [
+      {
+        "field": "area",
+        "title": "Area",
+        "type": "nominal"
+      },
+      {
+        "field": "year_label",
+        "title": "Year",
+        "type": "ordinal"
+      },
+      {
+        "field": "number",
+        "format": ",",
+        "title": "Clients",
+        "type": "quantitative"
+      },
+      {
+        "field": "rate",
+        "format": ".1f",
+        "title": "Per 10,000 people",
+        "type": "quantitative"
+      }
+    ],
+    "x": {
+      "axis": {
+        "labelAngle": -45
+      },
+      "field": "year_label",
+      "sort": [
+        "2011\u201312",
+        "2012\u201313",
+        "2013\u201314",
+        "2014\u201315",
+        "2015\u201316",
+        "2016\u201317",
+        "2017\u201318",
+        "2018\u201319",
+        "2019\u201320",
+        "2020\u201321",
+        "2021\u201322",
+        "2022\u201323",
+        "2023\u201324",
+        "2024\u201325"
+      ],
+      "title": null,
+      "type": "ordinal"
+    },
+    "y": {
+      "axis": {
+        "format": ",d"
+      },
+      "field": "value",
+      "scale": {
+        "zero": false
+      },
+      "title": null,
+      "type": "quantitative"
+    }
+  },
+  "height": 300,
+  "params": [
+    {
+      "name": "areaPick",
+      "bind": {
+        "input": "select",
+        "options": [
+          "National",
+          "Australian Capital Territory",
+          "New South Wales",
+          "Northern Territory",
+          "Queensland",
+          "South Australia",
+          "Tasmania",
+          "Victoria",
+          "Western Australia"
+        ],
+        "name": "Area "
+      },
+      "value": "National"
+    },
+    {
+      "name": "startYear",
+      "bind": {
+        "input": "range",
+        "max": 2023,
+        "min": 2011,
+        "name": "From ",
+        "step": 1
+      },
+      "value": 2011
+    },
+    {
+      "name": "measure",
+      "bind": {
+        "input": "radio",
+        "options": [
+          "number",
+          "rate"
+        ],
+        "labels": [
+          "Number of clients",
+          "Per 10,000 people"
+        ],
+        "name": "Show "
+      },
+      "value": "number"
+    }
+  ],
+  "title": {
+    "text": {
+      "expr": "'People helped by specialist homelessness services: ' + areaPick"
+    },
+    "subtitle": [
+      "Clients who received help in each financial year, not everyone who is homeless. The vertical axis does not start at zero.",
+      "Source: AIHW, Specialist homelessness services historical tables (HIST.CLIENTS)"
+    ]
+  },
+  "transform": [
+    {
+      "filter": "((datum.area === areaPick) && (datum.year >= startYear))"
+    },
+    {
+      "calculate": "datum[measure]",
+      "as": "value"
+    }
+  ],
+  "width": 500,
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.4.1.json"
+}

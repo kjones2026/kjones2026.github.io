@@ -1,0 +1,159 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 300,
+      "continuousHeight": 300
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "bar"
+      },
+      "encoding": {
+        "color": {
+          "condition": {
+            "test": "datum.rough == 1",
+            "value": "#c8102e"
+          },
+          "value": "#b5b5b5"
+        },
+        "tooltip": [
+          {
+            "field": "group",
+            "title": "Where staying",
+            "type": "nominal"
+          },
+          {
+            "field": "year",
+            "title": "Census year",
+            "type": "ordinal"
+          },
+          {
+            "field": "people",
+            "format": ",",
+            "title": "People",
+            "type": "quantitative"
+          },
+          {
+            "field": "share",
+            "format": ".1f",
+            "title": "Share of all homeless (%)",
+            "type": "quantitative"
+          }
+        ],
+        "x": {
+          "axis": {
+            "format": ",d"
+          },
+          "field": "people",
+          "title": "People counted as homeless on Census night",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "group",
+          "sort": [
+            "Severely crowded dwellings",
+            "Supported accommodation for the homeless",
+            "Boarding houses",
+            "Staying temporarily with other households",
+            "Sleeping rough (improvised dwellings, tents, sleeping out)",
+            "Other temporary lodging"
+          ],
+          "title": null,
+          "type": "nominal"
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.year == yearPick"
+        },
+        {
+          "calculate": "datum.people / datum.total * 100",
+          "as": "share"
+        },
+        {
+          "calculate": "format(datum.share, '.0f') + '%'",
+          "as": "label"
+        }
+      ]
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 4,
+        "fontSize": 12
+      },
+      "encoding": {
+        "text": {
+          "field": "label",
+          "type": "nominal"
+        },
+        "x": {
+          "field": "people",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "group",
+          "sort": [
+            "Severely crowded dwellings",
+            "Supported accommodation for the homeless",
+            "Boarding houses",
+            "Staying temporarily with other households",
+            "Sleeping rough (improvised dwellings, tents, sleeping out)",
+            "Other temporary lodging"
+          ],
+          "type": "nominal"
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.year == yearPick"
+        },
+        {
+          "calculate": "datum.people / datum.total * 100",
+          "as": "share"
+        },
+        {
+          "calculate": "format(datum.share, '.0f') + '%'",
+          "as": "label"
+        }
+      ]
+    }
+  ],
+  "data": {
+    "url": "https://raw.githubusercontent.com/kjones2026/kjones2026.github.io/refs/heads/main/Project/census_homeless_groups.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "height": 250,
+  "params": [
+    {
+      "name": "yearPick",
+      "bind": {
+        "input": "select",
+        "options": [
+          2006,
+          2011,
+          2016,
+          2021
+        ],
+        "name": "Census year "
+      },
+      "value": 2021
+    }
+  ],
+  "title": {
+    "text": {
+      "expr": "'Where people experiencing homelessness were staying on Census night, ' + yearPick"
+    },
+    "subtitle": [
+      "Labels show each group's share of everyone counted as homeless. Sleeping rough is in red.",
+      "Source: ABS, Census of Population and Housing, Estimating homelessness (Table 1.1)"
+    ]
+  },
+  "width": 440,
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.4.1.json"
+}
