@@ -1,0 +1,64 @@
+status,sex,reason,clients,share,slice_order,short
+All clients,All sexes,Family and domestic violence,76456,26.7,0,Family and domestic violence
+All clients,All sexes,Housing crisis,52757,18.4,1,Housing crisis
+All clients,All sexes,Inadequate or inappropriate dwelling conditions,34389,12.0,2,Inadequate dwelling conditions
+All clients,All sexes,Financial difficulties,28820,10.1,3,Financial difficulties
+All clients,All sexes,Housing affordability stress,26179,9.1,4,Housing affordability stress
+All clients,All sexes,Relationship/family breakdown,11046,3.9,5,Relationship/family breakdown
+All clients,All sexes,All other reasons,56769,19.8,6,All other reasons
+All clients,Females,Family and domestic violence,58364,33.9,0,Family and domestic violence
+All clients,Females,Housing crisis,29480,17.1,1,Housing crisis
+All clients,Females,Inadequate or inappropriate dwelling conditions,17976,10.4,2,Inadequate dwelling conditions
+All clients,Females,Financial difficulties,16739,9.7,3,Financial difficulties
+All clients,Females,Housing affordability stress,15080,8.8,4,Housing affordability stress
+All clients,Females,Relationship/family breakdown,6584,3.8,5,Relationship/family breakdown
+All clients,Females,All other reasons,28094,16.3,6,All other reasons
+All clients,Males,Family and domestic violence,18092,15.9,0,Family and domestic violence
+All clients,Males,Housing crisis,23277,20.4,1,Housing crisis
+All clients,Males,Inadequate or inappropriate dwelling conditions,16413,14.4,2,Inadequate dwelling conditions
+All clients,Males,Financial difficulties,12081,10.6,3,Financial difficulties
+All clients,Males,Housing affordability stress,11099,9.7,4,Housing affordability stress
+All clients,Males,Relationship/family breakdown,4462,3.9,5,Relationship/family breakdown
+All clients,Males,All other reasons,28675,25.1,6,All other reasons
+At risk of homelessness,All sexes,Family and domestic violence,43048,31.1,0,Family and domestic violence
+At risk of homelessness,All sexes,Housing crisis,22967,16.6,1,Housing crisis
+At risk of homelessness,All sexes,Inadequate or inappropriate dwelling conditions,8955,6.5,2,Inadequate dwelling conditions
+At risk of homelessness,All sexes,Financial difficulties,19387,14.0,3,Financial difficulties
+At risk of homelessness,All sexes,Housing affordability stress,12134,8.8,4,Housing affordability stress
+At risk of homelessness,All sexes,Relationship/family breakdown,4153,3.0,5,Relationship/family breakdown
+At risk of homelessness,All sexes,All other reasons,27987,20.2,6,All other reasons
+At risk of homelessness,Females,Family and domestic violence,33641,37.1,0,Family and domestic violence
+At risk of homelessness,Females,Housing crisis,14122,15.6,1,Housing crisis
+At risk of homelessness,Females,Inadequate or inappropriate dwelling conditions,5556,6.1,2,Inadequate dwelling conditions
+At risk of homelessness,Females,Financial difficulties,12349,13.6,3,Financial difficulties
+At risk of homelessness,Females,Housing affordability stress,7811,8.6,4,Housing affordability stress
+At risk of homelessness,Females,Relationship/family breakdown,2741,3.0,5,Relationship/family breakdown
+At risk of homelessness,Females,All other reasons,14390,15.9,6,All other reasons
+At risk of homelessness,Males,Family and domestic violence,9407,19.6,0,Family and domestic violence
+At risk of homelessness,Males,Housing crisis,8845,18.4,1,Housing crisis
+At risk of homelessness,Males,Inadequate or inappropriate dwelling conditions,3399,7.1,2,Inadequate dwelling conditions
+At risk of homelessness,Males,Financial difficulties,7038,14.7,3,Financial difficulties
+At risk of homelessness,Males,Housing affordability stress,4323,9.0,4,Housing affordability stress
+At risk of homelessness,Males,Relationship/family breakdown,1412,2.9,5,Relationship/family breakdown
+At risk of homelessness,Males,All other reasons,13597,28.3,6,All other reasons
+Experiencing homelessness,All sexes,Family and domestic violence,24074,18.3,0,Family and domestic violence
+Experiencing homelessness,All sexes,Housing crisis,28808,21.9,1,Housing crisis
+Experiencing homelessness,All sexes,Inadequate or inappropriate dwelling conditions,24765,18.8,2,Inadequate dwelling conditions
+Experiencing homelessness,All sexes,Financial difficulties,7820,5.9,3,Financial difficulties
+Experiencing homelessness,All sexes,Housing affordability stress,13521,10.3,4,Housing affordability stress
+Experiencing homelessness,All sexes,Relationship/family breakdown,6583,5.0,5,Relationship/family breakdown
+Experiencing homelessness,All sexes,All other reasons,26243,19.9,6,All other reasons
+Experiencing homelessness,Females,Family and domestic violence,17420,24.6,0,Family and domestic violence
+Experiencing homelessness,Females,Housing crisis,14802,20.9,1,Housing crisis
+Experiencing homelessness,Females,Inadequate or inappropriate dwelling conditions,12077,17.1,2,Inadequate dwelling conditions
+Experiencing homelessness,Females,Financial difficulties,3496,4.9,3,Financial difficulties
+Experiencing homelessness,Females,Housing affordability stress,6965,9.8,4,Housing affordability stress
+Experiencing homelessness,Females,Relationship/family breakdown,3641,5.1,5,Relationship/family breakdown
+Experiencing homelessness,Females,All other reasons,12407,17.5,6,All other reasons
+Experiencing homelessness,Males,Family and domestic violence,6654,10.9,0,Family and domestic violence
+Experiencing homelessness,Males,Housing crisis,14006,23.0,1,Housing crisis
+Experiencing homelessness,Males,Inadequate or inappropriate dwelling conditions,12688,20.8,2,Inadequate dwelling conditions
+Experiencing homelessness,Males,Financial difficulties,4324,7.1,3,Financial difficulties
+Experiencing homelessness,Males,Housing affordability stress,6556,10.7,4,Housing affordability stress
+Experiencing homelessness,Males,Relationship/family breakdown,2942,4.8,5,Relationship/family breakdown
+Experiencing homelessness,Males,All other reasons,13836,22.7,6,All other reasons
