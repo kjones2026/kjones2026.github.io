@@ -1,0 +1,1028 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 300,
+      "continuousHeight": 300
+    }
+  },
+  "layer": [
+    {
+      "data": {
+        "name": "data-f5d04a7d0a6b174ac8c9f573356d6b06"
+      },
+      "mark": {
+        "type": "rect",
+        "opacity": 0.5,
+        "stroke": "white",
+        "strokeWidth": 0.4
+      },
+      "encoding": {
+        "color": {
+          "field": "year",
+          "legend": {
+            "orient": "top-right"
+          },
+          "scale": {
+            "domain": [
+              "2019",
+              "2025"
+            ],
+            "range": [
+              "#7a7a7a",
+              "#c8102e"
+            ]
+          },
+          "title": null,
+          "type": "nominal"
+        },
+        "tooltip": [
+          {
+            "field": "year",
+            "title": "Year",
+            "type": "nominal"
+          },
+          {
+            "field": "band",
+            "format": ".0f",
+            "title": "From \u00a3",
+            "type": "quantitative"
+          },
+          {
+            "field": "band_end",
+            "format": ".0f",
+            "title": "To \u00a3",
+            "type": "quantitative"
+          },
+          {
+            "field": "share",
+            "format": ".1%",
+            "title": "Share of prices",
+            "type": "quantitative"
+          }
+        ],
+        "x": {
+          "axis": {
+            "grid": false
+          },
+          "field": "band",
+          "scale": {
+            "domain": [
+              2,
+              40
+            ],
+            "nice": false
+          },
+          "title": "Price of a restaurant main course (\u00a3), in \u00a31 bands",
+          "type": "quantitative"
+        },
+        "x2": {
+          "field": "band_end"
+        },
+        "y": {
+          "axis": {
+            "format": "%",
+            "grid": false
+          },
+          "field": "share",
+          "title": "Share of that year's prices",
+          "type": "quantitative"
+        },
+        "y2": {
+          "datum": 0
+        }
+      }
+    },
+    {
+      "data": {
+        "name": "data-83e919b9b053d1b18b2927c2ff4e1ee9"
+      },
+      "mark": {
+        "type": "rule",
+        "strokeDash": [
+          6,
+          4
+        ],
+        "strokeWidth": 2.5
+      },
+      "encoding": {
+        "color": {
+          "field": "year",
+          "legend": null,
+          "scale": {
+            "domain": [
+              "2019",
+              "2025"
+            ],
+            "range": [
+              "#333333",
+              "#9b0a20"
+            ]
+          },
+          "type": "nominal"
+        },
+        "x": {
+          "field": "median",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "data": {
+        "name": "data-83e919b9b053d1b18b2927c2ff4e1ee9"
+      },
+      "mark": {
+        "type": "rule",
+        "strokeDash": [
+          2,
+          4
+        ],
+        "strokeWidth": 2.5
+      },
+      "encoding": {
+        "color": {
+          "field": "year",
+          "legend": null,
+          "scale": {
+            "domain": [
+              "2019",
+              "2025"
+            ],
+            "range": [
+              "#333333",
+              "#9b0a20"
+            ]
+          },
+          "type": "nominal"
+        },
+        "x": {
+          "field": "p90",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "layer": [
+        {
+          "mark": {
+            "type": "text",
+            "align": "right",
+            "baseline": "top",
+            "color": "white",
+            "dx": -6,
+            "fontSize": 12,
+            "fontWeight": "bold",
+            "stroke": "white",
+            "strokeWidth": 5
+          },
+          "encoding": {
+            "text": {
+              "field": "median_label",
+              "type": "nominal"
+            },
+            "x": {
+              "field": "median",
+              "type": "quantitative"
+            },
+            "y": {
+              "value": 4
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "right",
+            "baseline": "top",
+            "dx": -6,
+            "fontSize": 12,
+            "fontWeight": "bold"
+          },
+          "encoding": {
+            "color": {
+              "field": "year",
+              "legend": null,
+              "scale": {
+                "domain": [
+                  "2019",
+                  "2025"
+                ],
+                "range": [
+                  "#333333",
+                  "#9b0a20"
+                ]
+              },
+              "type": "nominal"
+            },
+            "text": {
+              "field": "median_label",
+              "type": "nominal"
+            },
+            "x": {
+              "field": "median",
+              "type": "quantitative"
+            },
+            "y": {
+              "value": 4
+            }
+          }
+        },
+        {
+          "layer": [
+            {
+              "mark": {
+                "type": "text",
+                "align": "left",
+                "baseline": "top",
+                "color": "white",
+                "dx": 6,
+                "fontSize": 12,
+                "fontWeight": "bold",
+                "stroke": "white",
+                "strokeWidth": 5
+              },
+              "encoding": {
+                "text": {
+                  "field": "median_label",
+                  "type": "nominal"
+                },
+                "x": {
+                  "field": "median",
+                  "type": "quantitative"
+                },
+                "y": {
+                  "value": 24
+                }
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "align": "left",
+                "baseline": "top",
+                "dx": 6,
+                "fontSize": 12,
+                "fontWeight": "bold"
+              },
+              "encoding": {
+                "color": {
+                  "field": "year",
+                  "legend": null,
+                  "scale": {
+                    "domain": [
+                      "2019",
+                      "2025"
+                    ],
+                    "range": [
+                      "#333333",
+                      "#9b0a20"
+                    ]
+                  },
+                  "type": "nominal"
+                },
+                "text": {
+                  "field": "median_label",
+                  "type": "nominal"
+                },
+                "x": {
+                  "field": "median",
+                  "type": "quantitative"
+                },
+                "y": {
+                  "value": 24
+                }
+              }
+            }
+          ],
+          "data": {
+            "name": "data-fdac22603b5d9eef8aff907cf546b836"
+          }
+        },
+        {
+          "layer": [
+            {
+              "mark": {
+                "type": "text",
+                "align": "right",
+                "baseline": "top",
+                "color": "white",
+                "dx": -6,
+                "fontSize": 12,
+                "fontWeight": "bold",
+                "stroke": "white",
+                "strokeWidth": 5
+              },
+              "encoding": {
+                "text": {
+                  "field": "p90_label",
+                  "type": "nominal"
+                },
+                "x": {
+                  "field": "p90",
+                  "type": "quantitative"
+                },
+                "y": {
+                  "value": 44
+                }
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "align": "right",
+                "baseline": "top",
+                "dx": -6,
+                "fontSize": 12,
+                "fontWeight": "bold"
+              },
+              "encoding": {
+                "color": {
+                  "field": "year",
+                  "legend": null,
+                  "scale": {
+                    "domain": [
+                      "2019",
+                      "2025"
+                    ],
+                    "range": [
+                      "#333333",
+                      "#9b0a20"
+                    ]
+                  },
+                  "type": "nominal"
+                },
+                "text": {
+                  "field": "p90_label",
+                  "type": "nominal"
+                },
+                "x": {
+                  "field": "p90",
+                  "type": "quantitative"
+                },
+                "y": {
+                  "value": 44
+                }
+              }
+            }
+          ],
+          "data": {
+            "name": "data-514e726bbd9e0733068789ae5c97d8af"
+          }
+        },
+        {
+          "layer": [
+            {
+              "mark": {
+                "type": "text",
+                "align": "left",
+                "baseline": "top",
+                "color": "white",
+                "dx": 6,
+                "fontSize": 12,
+                "fontWeight": "bold",
+                "stroke": "white",
+                "strokeWidth": 5
+              },
+              "encoding": {
+                "text": {
+                  "field": "p90_label",
+                  "type": "nominal"
+                },
+                "x": {
+                  "field": "p90",
+                  "type": "quantitative"
+                },
+                "y": {
+                  "value": 64
+                }
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "align": "left",
+                "baseline": "top",
+                "dx": 6,
+                "fontSize": 12,
+                "fontWeight": "bold"
+              },
+              "encoding": {
+                "color": {
+                  "field": "year",
+                  "legend": null,
+                  "scale": {
+                    "domain": [
+                      "2019",
+                      "2025"
+                    ],
+                    "range": [
+                      "#333333",
+                      "#9b0a20"
+                    ]
+                  },
+                  "type": "nominal"
+                },
+                "text": {
+                  "field": "p90_label",
+                  "type": "nominal"
+                },
+                "x": {
+                  "field": "p90",
+                  "type": "quantitative"
+                },
+                "y": {
+                  "value": 64
+                }
+              }
+            }
+          ],
+          "data": {
+            "name": "data-fdac22603b5d9eef8aff907cf546b836"
+          }
+        }
+      ],
+      "data": {
+        "name": "data-514e726bbd9e0733068789ae5c97d8af"
+      }
+    }
+  ],
+  "height": 300,
+  "title": {
+    "text": "A restaurant main course: the cheap end has thinned out",
+    "subtitle": [
+      "Share of restaurant main-course prices in each \u00a31 band. Dashed: median. Dotted: 90th percentile.",
+      "Source: LSE Growth Lab, AutoCPI (menu photos), 5% venue sample"
+    ]
+  },
+  "width": 560,
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.4.1.json",
+  "datasets": {
+    "data-f5d04a7d0a6b174ac8c9f573356d6b06": [
+      {
+        "year": "2019",
+        "band": 2.0,
+        "prices": 82,
+        "share": 0.0239,
+        "band_end": 3.0
+      },
+      {
+        "year": "2019",
+        "band": 3.0,
+        "prices": 176,
+        "share": 0.0513,
+        "band_end": 4.0
+      },
+      {
+        "year": "2019",
+        "band": 4.0,
+        "prices": 230,
+        "share": 0.0671,
+        "band_end": 5.0
+      },
+      {
+        "year": "2019",
+        "band": 5.0,
+        "prices": 276,
+        "share": 0.0805,
+        "band_end": 6.0
+      },
+      {
+        "year": "2019",
+        "band": 6.0,
+        "prices": 375,
+        "share": 0.1094,
+        "band_end": 7.0
+      },
+      {
+        "year": "2019",
+        "band": 7.0,
+        "prices": 382,
+        "share": 0.1114,
+        "band_end": 8.0
+      },
+      {
+        "year": "2019",
+        "band": 8.0,
+        "prices": 294,
+        "share": 0.0858,
+        "band_end": 9.0
+      },
+      {
+        "year": "2019",
+        "band": 9.0,
+        "prices": 298,
+        "share": 0.0869,
+        "band_end": 10.0
+      },
+      {
+        "year": "2019",
+        "band": 10.0,
+        "prices": 213,
+        "share": 0.0621,
+        "band_end": 11.0
+      },
+      {
+        "year": "2019",
+        "band": 11.0,
+        "prices": 107,
+        "share": 0.0312,
+        "band_end": 12.0
+      },
+      {
+        "year": "2019",
+        "band": 12.0,
+        "prices": 214,
+        "share": 0.0624,
+        "band_end": 13.0
+      },
+      {
+        "year": "2019",
+        "band": 13.0,
+        "prices": 141,
+        "share": 0.0411,
+        "band_end": 14.0
+      },
+      {
+        "year": "2019",
+        "band": 14.0,
+        "prices": 151,
+        "share": 0.044,
+        "band_end": 15.0
+      },
+      {
+        "year": "2019",
+        "band": 15.0,
+        "prices": 98,
+        "share": 0.0286,
+        "band_end": 16.0
+      },
+      {
+        "year": "2019",
+        "band": 16.0,
+        "prices": 85,
+        "share": 0.0248,
+        "band_end": 17.0
+      },
+      {
+        "year": "2019",
+        "band": 17.0,
+        "prices": 50,
+        "share": 0.0146,
+        "band_end": 18.0
+      },
+      {
+        "year": "2019",
+        "band": 18.0,
+        "prices": 50,
+        "share": 0.0146,
+        "band_end": 19.0
+      },
+      {
+        "year": "2019",
+        "band": 19.0,
+        "prices": 24,
+        "share": 0.007,
+        "band_end": 20.0
+      },
+      {
+        "year": "2019",
+        "band": 20.0,
+        "prices": 12,
+        "share": 0.0035,
+        "band_end": 21.0
+      },
+      {
+        "year": "2019",
+        "band": 21.0,
+        "prices": 27,
+        "share": 0.0079,
+        "band_end": 22.0
+      },
+      {
+        "year": "2019",
+        "band": 22.0,
+        "prices": 31,
+        "share": 0.009,
+        "band_end": 23.0
+      },
+      {
+        "year": "2019",
+        "band": 23.0,
+        "prices": 19,
+        "share": 0.0055,
+        "band_end": 24.0
+      },
+      {
+        "year": "2019",
+        "band": 24.0,
+        "prices": 13,
+        "share": 0.0038,
+        "band_end": 25.0
+      },
+      {
+        "year": "2019",
+        "band": 25.0,
+        "prices": 19,
+        "share": 0.0055,
+        "band_end": 26.0
+      },
+      {
+        "year": "2019",
+        "band": 26.0,
+        "prices": 8,
+        "share": 0.0023,
+        "band_end": 27.0
+      },
+      {
+        "year": "2019",
+        "band": 27.0,
+        "prices": 6,
+        "share": 0.0018,
+        "band_end": 28.0
+      },
+      {
+        "year": "2019",
+        "band": 28.0,
+        "prices": 8,
+        "share": 0.0023,
+        "band_end": 29.0
+      },
+      {
+        "year": "2019",
+        "band": 29.0,
+        "prices": 5,
+        "share": 0.0015,
+        "band_end": 30.0
+      },
+      {
+        "year": "2019",
+        "band": 30.0,
+        "prices": 12,
+        "share": 0.0035,
+        "band_end": 31.0
+      },
+      {
+        "year": "2019",
+        "band": 31.0,
+        "prices": 1,
+        "share": 0.0003,
+        "band_end": 32.0
+      },
+      {
+        "year": "2019",
+        "band": 32.0,
+        "prices": 1,
+        "share": 0.0003,
+        "band_end": 33.0
+      },
+      {
+        "year": "2019",
+        "band": 33.0,
+        "prices": 3,
+        "share": 0.0009,
+        "band_end": 34.0
+      },
+      {
+        "year": "2019",
+        "band": 34.0,
+        "prices": 4,
+        "share": 0.0012,
+        "band_end": 35.0
+      },
+      {
+        "year": "2019",
+        "band": 35.0,
+        "prices": 6,
+        "share": 0.0018,
+        "band_end": 36.0
+      },
+      {
+        "year": "2019",
+        "band": 36.0,
+        "prices": 1,
+        "share": 0.0003,
+        "band_end": 37.0
+      },
+      {
+        "year": "2019",
+        "band": 37.0,
+        "prices": 1,
+        "share": 0.0003,
+        "band_end": 38.0
+      },
+      {
+        "year": "2019",
+        "band": 38.0,
+        "prices": 2,
+        "share": 0.0006,
+        "band_end": 39.0
+      },
+      {
+        "year": "2019",
+        "band": 39.0,
+        "prices": 3,
+        "share": 0.0009,
+        "band_end": 40.0
+      },
+      {
+        "year": "2025",
+        "band": 2.0,
+        "prices": 128,
+        "share": 0.0088,
+        "band_end": 3.0
+      },
+      {
+        "year": "2025",
+        "band": 3.0,
+        "prices": 365,
+        "share": 0.0251,
+        "band_end": 4.0
+      },
+      {
+        "year": "2025",
+        "band": 4.0,
+        "prices": 752,
+        "share": 0.0516,
+        "band_end": 5.0
+      },
+      {
+        "year": "2025",
+        "band": 5.0,
+        "prices": 810,
+        "share": 0.0556,
+        "band_end": 6.0
+      },
+      {
+        "year": "2025",
+        "band": 6.0,
+        "prices": 852,
+        "share": 0.0585,
+        "band_end": 7.0
+      },
+      {
+        "year": "2025",
+        "band": 7.0,
+        "prices": 1016,
+        "share": 0.0697,
+        "band_end": 8.0
+      },
+      {
+        "year": "2025",
+        "band": 8.0,
+        "prices": 1137,
+        "share": 0.078,
+        "band_end": 9.0
+      },
+      {
+        "year": "2025",
+        "band": 9.0,
+        "prices": 1380,
+        "share": 0.0947,
+        "band_end": 10.0
+      },
+      {
+        "year": "2025",
+        "band": 10.0,
+        "prices": 1190,
+        "share": 0.0817,
+        "band_end": 11.0
+      },
+      {
+        "year": "2025",
+        "band": 11.0,
+        "prices": 786,
+        "share": 0.054,
+        "band_end": 12.0
+      },
+      {
+        "year": "2025",
+        "band": 12.0,
+        "prices": 987,
+        "share": 0.0677,
+        "band_end": 13.0
+      },
+      {
+        "year": "2025",
+        "band": 13.0,
+        "prices": 732,
+        "share": 0.0502,
+        "band_end": 14.0
+      },
+      {
+        "year": "2025",
+        "band": 14.0,
+        "prices": 742,
+        "share": 0.0509,
+        "band_end": 15.0
+      },
+      {
+        "year": "2025",
+        "band": 15.0,
+        "prices": 671,
+        "share": 0.0461,
+        "band_end": 16.0
+      },
+      {
+        "year": "2025",
+        "band": 16.0,
+        "prices": 574,
+        "share": 0.0394,
+        "band_end": 17.0
+      },
+      {
+        "year": "2025",
+        "band": 17.0,
+        "prices": 437,
+        "share": 0.03,
+        "band_end": 18.0
+      },
+      {
+        "year": "2025",
+        "band": 18.0,
+        "prices": 388,
+        "share": 0.0266,
+        "band_end": 19.0
+      },
+      {
+        "year": "2025",
+        "band": 19.0,
+        "prices": 319,
+        "share": 0.0219,
+        "band_end": 20.0
+      },
+      {
+        "year": "2025",
+        "band": 20.0,
+        "prices": 143,
+        "share": 0.0098,
+        "band_end": 21.0
+      },
+      {
+        "year": "2025",
+        "band": 21.0,
+        "prices": 129,
+        "share": 0.0089,
+        "band_end": 22.0
+      },
+      {
+        "year": "2025",
+        "band": 22.0,
+        "prices": 125,
+        "share": 0.0086,
+        "band_end": 23.0
+      },
+      {
+        "year": "2025",
+        "band": 23.0,
+        "prices": 95,
+        "share": 0.0065,
+        "band_end": 24.0
+      },
+      {
+        "year": "2025",
+        "band": 24.0,
+        "prices": 118,
+        "share": 0.0081,
+        "band_end": 25.0
+      },
+      {
+        "year": "2025",
+        "band": 25.0,
+        "prices": 90,
+        "share": 0.0062,
+        "band_end": 26.0
+      },
+      {
+        "year": "2025",
+        "band": 26.0,
+        "prices": 70,
+        "share": 0.0048,
+        "band_end": 27.0
+      },
+      {
+        "year": "2025",
+        "band": 27.0,
+        "prices": 69,
+        "share": 0.0047,
+        "band_end": 28.0
+      },
+      {
+        "year": "2025",
+        "band": 28.0,
+        "prices": 75,
+        "share": 0.0051,
+        "band_end": 29.0
+      },
+      {
+        "year": "2025",
+        "band": 29.0,
+        "prices": 54,
+        "share": 0.0037,
+        "band_end": 30.0
+      },
+      {
+        "year": "2025",
+        "band": 30.0,
+        "prices": 52,
+        "share": 0.0036,
+        "band_end": 31.0
+      },
+      {
+        "year": "2025",
+        "band": 31.0,
+        "prices": 24,
+        "share": 0.0016,
+        "band_end": 32.0
+      },
+      {
+        "year": "2025",
+        "band": 32.0,
+        "prices": 62,
+        "share": 0.0043,
+        "band_end": 33.0
+      },
+      {
+        "year": "2025",
+        "band": 33.0,
+        "prices": 16,
+        "share": 0.0011,
+        "band_end": 34.0
+      },
+      {
+        "year": "2025",
+        "band": 34.0,
+        "prices": 39,
+        "share": 0.0027,
+        "band_end": 35.0
+      },
+      {
+        "year": "2025",
+        "band": 35.0,
+        "prices": 24,
+        "share": 0.0016,
+        "band_end": 36.0
+      },
+      {
+        "year": "2025",
+        "band": 36.0,
+        "prices": 38,
+        "share": 0.0026,
+        "band_end": 37.0
+      },
+      {
+        "year": "2025",
+        "band": 37.0,
+        "prices": 15,
+        "share": 0.001,
+        "band_end": 38.0
+      },
+      {
+        "year": "2025",
+        "band": 38.0,
+        "prices": 36,
+        "share": 0.0025,
+        "band_end": 39.0
+      },
+      {
+        "year": "2025",
+        "band": 39.0,
+        "prices": 29,
+        "share": 0.002,
+        "band_end": 40.0
+      }
+    ],
+    "data-83e919b9b053d1b18b2927c2ff4e1ee9": [
+      {
+        "year": "2019",
+        "median": 8.8,
+        "p90": 16.95,
+        "median_label": "2019 median \u00a38.80",
+        "p90_label": "2019 90th pct \u00a316.95"
+      },
+      {
+        "year": "2025",
+        "median": 10.95,
+        "p90": 20.0,
+        "median_label": "2025 median \u00a310.95",
+        "p90_label": "2025 90th pct \u00a320.00"
+      }
+    ],
+    "data-514e726bbd9e0733068789ae5c97d8af": [
+      {
+        "year": "2019",
+        "median": 8.8,
+        "p90": 16.95,
+        "median_label": "2019 median \u00a38.80",
+        "p90_label": "2019 90th pct \u00a316.95"
+      }
+    ],
+    "data-fdac22603b5d9eef8aff907cf546b836": [
+      {
+        "year": "2025",
+        "median": 10.95,
+        "p90": 20.0,
+        "median_label": "2025 median \u00a310.95",
+        "p90_label": "2025 90th pct \u00a320.00"
+      }
+    ]
+  }
+}

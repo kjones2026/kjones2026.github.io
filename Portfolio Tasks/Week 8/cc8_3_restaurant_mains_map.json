@@ -1,0 +1,201 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 300,
+      "continuousHeight": 300
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "geoshape",
+        "fill": "#e3e3e3",
+        "stroke": "white"
+      }
+    },
+    {
+      "mark": {
+        "type": "geoshape",
+        "stroke": "white"
+      },
+      "encoding": {
+        "color": {
+          "field": "median",
+          "scale": {
+            "scheme": "purples"
+          },
+          "title": "Median \u00a3",
+          "type": "quantitative"
+        },
+        "tooltip": [
+          {
+            "field": "properties.name",
+            "title": "Region",
+            "type": "nominal"
+          },
+          {
+            "field": "median",
+            "format": ".2f",
+            "title": "Median (\u00a3)",
+            "type": "quantitative"
+          },
+          {
+            "field": "p10",
+            "format": ".2f",
+            "title": "10th percentile (\u00a3)",
+            "type": "quantitative"
+          },
+          {
+            "field": "p90",
+            "format": ".2f",
+            "title": "90th percentile (\u00a3)",
+            "type": "quantitative"
+          },
+          {
+            "field": "prices",
+            "format": ",",
+            "title": "Prices",
+            "type": "quantitative"
+          },
+          {
+            "field": "venues",
+            "format": ",",
+            "title": "Venues",
+            "type": "quantitative"
+          }
+        ]
+      },
+      "transform": [
+        {
+          "lookup": "properties.id",
+          "from": {
+            "data": {
+              "name": "data-00502c17c4e347be64660abda20e97ae"
+            },
+            "key": "itl1_id",
+            "fields": [
+              "median",
+              "p10",
+              "p90",
+              "prices",
+              "venues"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/map-data/refs/heads/main/gbr/ITL1_UK_2025.json",
+    "format": {
+      "type": "topojson",
+      "feature": "geog"
+    }
+  },
+  "height": 440,
+  "projection": {
+    "type": "mercator"
+  },
+  "title": {
+    "text": "Cost of restaurant main courses are highest in Scotland",
+    "subtitle": [
+      "Median main-course price in restaurants across the UK, 2024-2026",
+      "Source: LSE Growth Lab, AutoCPI (menu photos), 5% venue sample",
+      "Note: Cities only, grey areas less than 10 venues (excluded)"
+    ]
+  },
+  "width": 340,
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.4.1.json",
+  "datasets": {
+    "data-00502c17c4e347be64660abda20e97ae": [
+      {
+        "itl1_id": "TLC",
+        "prices": 597,
+        "venues": 22,
+        "median": 10.0,
+        "p10": 4.0,
+        "p90": 16.35
+      },
+      {
+        "itl1_id": "TLD",
+        "prices": 1964,
+        "venues": 57,
+        "median": 11.25,
+        "p10": 5.95,
+        "p90": 20.0
+      },
+      {
+        "itl1_id": "TLE",
+        "prices": 2769,
+        "venues": 71,
+        "median": 10.95,
+        "p10": 5.0,
+        "p90": 19.95
+      },
+      {
+        "itl1_id": "TLF",
+        "prices": 956,
+        "venues": 26,
+        "median": 10.42,
+        "p10": 4.95,
+        "p90": 22.99
+      },
+      {
+        "itl1_id": "TLG",
+        "prices": 2925,
+        "venues": 57,
+        "median": 8.25,
+        "p10": 4.5,
+        "p90": 15.95
+      },
+      {
+        "itl1_id": "TLH",
+        "prices": 731,
+        "venues": 23,
+        "median": 9.99,
+        "p10": 4.45,
+        "p90": 18.0
+      },
+      {
+        "itl1_id": "TLI",
+        "prices": 22143,
+        "venues": 396,
+        "median": 11.5,
+        "p10": 5.0,
+        "p90": 22.0
+      },
+      {
+        "itl1_id": "TLJ",
+        "prices": 2549,
+        "venues": 67,
+        "median": 9.99,
+        "p10": 5.0,
+        "p90": 18.9
+      },
+      {
+        "itl1_id": "TLK",
+        "prices": 898,
+        "venues": 33,
+        "median": 10.97,
+        "p10": 4.99,
+        "p90": 17.64
+      },
+      {
+        "itl1_id": "TLL",
+        "prices": 1769,
+        "venues": 54,
+        "median": 11.95,
+        "p10": 6.0,
+        "p90": 18.0
+      },
+      {
+        "itl1_id": "TLM",
+        "prices": 2361,
+        "venues": 50,
+        "median": 12.8,
+        "p10": 4.99,
+        "p90": 22.0
+      }
+    ]
+  }
+}

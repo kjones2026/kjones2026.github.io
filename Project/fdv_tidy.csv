@@ -1,0 +1,412 @@
+area,offence,year,number,rate
+Australia,Assault,2014,56906,442.5
+Australia,Assault,2015,62476,480.1
+Australia,Assault,2016,64388,489.0
+Australia,Assault,2017,61514,460.5
+Australia,Assault,2018,62411,461.3
+Australia,Assault,2019,64969,474.1
+Australia,Assault,2020,70028,505.1
+Australia,Assault,2021,72461,520.7
+Australia,Assault,2022,76870,547.3
+Australia,Assault,2023,85066,592.0
+Australia,Assault,2024,91577,624.4
+Australia,Assault,2025,93761,630.7
+Australian Capital Territory,Assault,2014,639,164.4
+Australian Capital Territory,Assault,2015,706,178.4
+Australian Capital Territory,Assault,2016,949,235.4
+Australian Capital Territory,Assault,2017,974,234.7
+Australian Capital Territory,Assault,2018,872,204.7
+Australian Capital Territory,Assault,2019,978,224.5
+Australian Capital Territory,Assault,2020,942,211.7
+Australian Capital Territory,Assault,2021,968,213.9
+Australian Capital Territory,Assault,2022,977,213.9
+Australian Capital Territory,Assault,2023,1099,235.6
+Australian Capital Territory,Assault,2024,1019,212.9
+Australian Capital Territory,Assault,2025,1011,208.6
+New South Wales,Assault,2014,29518,393.1
+New South Wales,Assault,2015,30464,400.0
+New South Wales,Assault,2016,29613,383.0
+New South Wales,Assault,2017,28796,366.6
+New South Wales,Assault,2018,29902,375.9
+New South Wales,Assault,2019,30937,384.5
+New South Wales,Assault,2020,31411,387.3
+New South Wales,Assault,2021,32476,401.1
+New South Wales,Assault,2022,32893,403.3
+New South Wales,Assault,2023,36317,435.3
+New South Wales,Assault,2024,38722,455.9
+New South Wales,Assault,2025,38942,453.3
+Northern Territory,Assault,2014,4282,1762.9
+Northern Territory,Assault,2015,4096,1673.9
+Northern Territory,Assault,2016,4009,1631.8
+Northern Territory,Assault,2017,4478,1809.9
+Northern Territory,Assault,2018,4359,1764.1
+Northern Territory,Assault,2019,4030,1634.5
+Northern Territory,Assault,2020,5131,2073.7
+Northern Territory,Assault,2021,5733,2310.3
+Northern Territory,Assault,2022,6796,2710.8
+Northern Territory,Assault,2023,7926,3138.6
+Northern Territory,Assault,2024,7502,2876.1
+Northern Territory,Assault,2025,7173,2697.7
+Queensland,Assault,2023,35483,649.8
+Queensland,Assault,2024,36907,662.4
+Queensland,Assault,2025,32232,568.5
+South Australia,Assault,2014,6727,398.8
+South Australia,Assault,2015,7740,455.1
+South Australia,Assault,2016,7779,454.2
+South Australia,Assault,2017,7124,412.1
+South Australia,Assault,2018,7291,417.6
+South Australia,Assault,2019,8009,453.2
+South Australia,Assault,2020,8686,485.2
+South Australia,Assault,2021,8788,487.5
+South Australia,Assault,2022,9588,526.4
+South Australia,Assault,2023,10666,575.8
+South Australia,Assault,2024,11886,631.4
+South Australia,Assault,2025,11869,624.2
+Tasmania,Assault,2014,1137,221.4
+Tasmania,Assault,2015,1196,232.2
+Tasmania,Assault,2016,1325,256.0
+Tasmania,Assault,2017,1431,271.7
+Tasmania,Assault,2018,1467,273.0
+Tasmania,Assault,2019,1578,288.0
+Tasmania,Assault,2020,1601,287.1
+Tasmania,Assault,2021,1616,284.9
+Tasmania,Assault,2022,1720,300.9
+Tasmania,Assault,2023,1821,317.7
+Tasmania,Assault,2024,1997,347.4
+Tasmania,Assault,2025,1973,341.5
+Western Australia,Assault,2014,14603,580.0
+Western Australia,Assault,2015,18274,719.3
+Western Australia,Assault,2016,20713,810.4
+Western Australia,Assault,2017,18711,723.6
+Western Australia,Assault,2018,18520,707.5
+Western Australia,Assault,2019,19437,730.8
+Western Australia,Assault,2020,22257,820.4
+Western Australia,Assault,2021,22880,832.2
+Western Australia,Assault,2022,24896,893.0
+Western Australia,Assault,2023,27237,945.3
+Western Australia,Assault,2024,30451,1022.8
+Western Australia,Assault,2025,32793,1076.5
+Australia,Homicide,2014,163,0.7
+Australia,Homicide,2015,164,0.7
+Australia,Homicide,2016,173,0.7
+Australia,Homicide,2017,129,0.5
+Australia,Homicide,2018,139,0.6
+Australia,Homicide,2019,130,0.5
+Australia,Homicide,2020,145,0.6
+Australia,Homicide,2021,106,0.4
+Australia,Homicide,2022,131,0.5
+Australia,Homicide,2023,161,0.6
+Australia,Homicide,2024,175,0.6
+Australia,Homicide,2025,133,0.5
+Australian Capital Territory,Homicide,2014,0,0.0
+Australian Capital Territory,Homicide,2015,3,0.8
+Australian Capital Territory,Homicide,2016,4,1.0
+Australian Capital Territory,Homicide,2017,0,0.0
+Australian Capital Territory,Homicide,2018,3,0.7
+Australian Capital Territory,Homicide,2019,0,0.0
+Australian Capital Territory,Homicide,2020,0,0.0
+Australian Capital Territory,Homicide,2021,0,0.0
+Australian Capital Territory,Homicide,2022,6,1.3
+Australian Capital Territory,Homicide,2023,3,0.6
+Australian Capital Territory,Homicide,2024,3,0.6
+Australian Capital Territory,Homicide,2025,0,0.0
+New South Wales,Homicide,2014,48,0.6
+New South Wales,Homicide,2015,32,0.4
+New South Wales,Homicide,2016,43,0.6
+New South Wales,Homicide,2017,28,0.4
+New South Wales,Homicide,2018,37,0.5
+New South Wales,Homicide,2019,38,0.5
+New South Wales,Homicide,2020,38,0.5
+New South Wales,Homicide,2021,26,0.3
+New South Wales,Homicide,2022,29,0.4
+New South Wales,Homicide,2023,44,0.5
+New South Wales,Homicide,2024,47,0.6
+New South Wales,Homicide,2025,37,0.4
+Northern Territory,Homicide,2014,4,1.6
+Northern Territory,Homicide,2015,14,5.7
+Northern Territory,Homicide,2016,4,1.6
+Northern Territory,Homicide,2017,7,2.8
+Northern Territory,Homicide,2018,3,1.2
+Northern Territory,Homicide,2019,3,1.2
+Northern Territory,Homicide,2020,3,1.2
+Northern Territory,Homicide,2021,7,2.8
+Northern Territory,Homicide,2022,8,3.2
+Northern Territory,Homicide,2023,6,2.4
+Northern Territory,Homicide,2024,7,2.7
+Northern Territory,Homicide,2025,3,1.1
+Queensland,Homicide,2014,46,1.0
+Queensland,Homicide,2015,35,0.7
+Queensland,Homicide,2016,37,0.8
+Queensland,Homicide,2017,27,0.5
+Queensland,Homicide,2018,20,0.4
+Queensland,Homicide,2019,20,0.4
+Queensland,Homicide,2020,28,0.5
+Queensland,Homicide,2021,8,0.2
+Queensland,Homicide,2022,29,0.5
+Queensland,Homicide,2023,41,0.8
+Queensland,Homicide,2024,43,0.8
+Queensland,Homicide,2025,28,0.5
+South Australia,Homicide,2014,14,0.8
+South Australia,Homicide,2015,13,0.8
+South Australia,Homicide,2016,16,0.9
+South Australia,Homicide,2017,22,1.3
+South Australia,Homicide,2018,12,0.7
+South Australia,Homicide,2019,14,0.8
+South Australia,Homicide,2020,12,0.7
+South Australia,Homicide,2021,14,0.8
+South Australia,Homicide,2022,15,0.8
+South Australia,Homicide,2023,12,0.6
+South Australia,Homicide,2024,11,0.6
+South Australia,Homicide,2025,12,0.6
+Tasmania,Homicide,2014,0,0.0
+Tasmania,Homicide,2015,8,1.6
+Tasmania,Homicide,2016,3,0.6
+Tasmania,Homicide,2017,0,0.0
+Tasmania,Homicide,2018,0,0.0
+Tasmania,Homicide,2019,3,0.5
+Tasmania,Homicide,2020,0,0.0
+Tasmania,Homicide,2021,7,1.2
+Tasmania,Homicide,2022,3,0.5
+Tasmania,Homicide,2023,5,0.9
+Tasmania,Homicide,2024,6,1.0
+Tasmania,Homicide,2025,0,0.0
+Victoria,Homicide,2014,37,0.6
+Victoria,Homicide,2015,42,0.7
+Victoria,Homicide,2016,40,0.6
+Victoria,Homicide,2017,35,0.6
+Victoria,Homicide,2018,33,0.5
+Victoria,Homicide,2019,34,0.5
+Victoria,Homicide,2020,35,0.5
+Victoria,Homicide,2021,32,0.5
+Victoria,Homicide,2022,30,0.5
+Victoria,Homicide,2023,31,0.5
+Victoria,Homicide,2024,37,0.5
+Victoria,Homicide,2025,29,0.4
+Western Australia,Homicide,2014,11,0.4
+Western Australia,Homicide,2015,17,0.7
+Western Australia,Homicide,2016,37,1.4
+Western Australia,Homicide,2017,13,0.5
+Western Australia,Homicide,2018,37,1.4
+Western Australia,Homicide,2019,12,0.5
+Western Australia,Homicide,2020,28,1.0
+Western Australia,Homicide,2021,12,0.4
+Western Australia,Homicide,2022,18,0.6
+Western Australia,Homicide,2023,18,0.6
+Western Australia,Homicide,2024,22,0.7
+Western Australia,Homicide,2025,12,0.4
+Australia,Kidnapping/abduction,2014,130,0.6
+Australia,Kidnapping/abduction,2015,141,0.6
+Australia,Kidnapping/abduction,2016,145,0.6
+Australia,Kidnapping/abduction,2017,159,0.6
+Australia,Kidnapping/abduction,2018,144,0.6
+Australia,Kidnapping/abduction,2019,148,0.6
+Australia,Kidnapping/abduction,2020,113,0.4
+Australia,Kidnapping/abduction,2021,152,0.6
+Australia,Kidnapping/abduction,2022,163,0.6
+Australia,Kidnapping/abduction,2023,169,0.6
+Australia,Kidnapping/abduction,2024,160,0.6
+Australia,Kidnapping/abduction,2025,164,0.6
+Australian Capital Territory,Kidnapping/abduction,2014,0,0.0
+Australian Capital Territory,Kidnapping/abduction,2015,3,0.8
+Australian Capital Territory,Kidnapping/abduction,2016,0,0.0
+Australian Capital Territory,Kidnapping/abduction,2017,0,0.0
+Australian Capital Territory,Kidnapping/abduction,2018,0,0.0
+Australian Capital Territory,Kidnapping/abduction,2019,0,0.0
+Australian Capital Territory,Kidnapping/abduction,2020,0,0.0
+Australian Capital Territory,Kidnapping/abduction,2021,0,0.0
+Australian Capital Territory,Kidnapping/abduction,2022,0,0.0
+Australian Capital Territory,Kidnapping/abduction,2023,0,0.0
+Australian Capital Territory,Kidnapping/abduction,2024,0,0.0
+Australian Capital Territory,Kidnapping/abduction,2025,0,0.0
+New South Wales,Kidnapping/abduction,2014,77,1.0
+New South Wales,Kidnapping/abduction,2015,83,1.1
+New South Wales,Kidnapping/abduction,2016,68,0.9
+New South Wales,Kidnapping/abduction,2017,77,1.0
+New South Wales,Kidnapping/abduction,2018,90,1.1
+New South Wales,Kidnapping/abduction,2019,72,0.9
+New South Wales,Kidnapping/abduction,2020,37,0.5
+New South Wales,Kidnapping/abduction,2021,88,1.1
+New South Wales,Kidnapping/abduction,2022,73,0.9
+New South Wales,Kidnapping/abduction,2023,96,1.2
+New South Wales,Kidnapping/abduction,2024,77,0.9
+New South Wales,Kidnapping/abduction,2025,88,1.0
+Northern Territory,Kidnapping/abduction,2014,0,0.0
+Northern Territory,Kidnapping/abduction,2015,0,0.0
+Northern Territory,Kidnapping/abduction,2016,0,0.0
+Northern Territory,Kidnapping/abduction,2017,0,0.0
+Northern Territory,Kidnapping/abduction,2018,0,0.0
+Northern Territory,Kidnapping/abduction,2019,0,0.0
+Northern Territory,Kidnapping/abduction,2020,0,0.0
+Northern Territory,Kidnapping/abduction,2021,0,0.0
+Northern Territory,Kidnapping/abduction,2022,3,1.2
+Northern Territory,Kidnapping/abduction,2023,0,0.0
+Northern Territory,Kidnapping/abduction,2024,0,0.0
+Northern Territory,Kidnapping/abduction,2025,0,0.0
+Queensland,Kidnapping/abduction,2014,5,0.1
+Queensland,Kidnapping/abduction,2015,0,0.0
+Queensland,Kidnapping/abduction,2016,5,0.1
+Queensland,Kidnapping/abduction,2017,5,0.1
+Queensland,Kidnapping/abduction,2018,3,0.1
+Queensland,Kidnapping/abduction,2019,11,0.2
+Queensland,Kidnapping/abduction,2020,10,0.2
+Queensland,Kidnapping/abduction,2021,4,0.1
+Queensland,Kidnapping/abduction,2022,13,0.2
+Queensland,Kidnapping/abduction,2023,10,0.2
+Queensland,Kidnapping/abduction,2024,6,0.1
+Queensland,Kidnapping/abduction,2025,4,0.1
+South Australia,Kidnapping/abduction,2014,23,1.4
+South Australia,Kidnapping/abduction,2015,35,2.1
+South Australia,Kidnapping/abduction,2016,28,1.6
+South Australia,Kidnapping/abduction,2017,25,1.4
+South Australia,Kidnapping/abduction,2018,17,1.0
+South Australia,Kidnapping/abduction,2019,21,1.2
+South Australia,Kidnapping/abduction,2020,21,1.2
+South Australia,Kidnapping/abduction,2021,19,1.1
+South Australia,Kidnapping/abduction,2022,19,1.0
+South Australia,Kidnapping/abduction,2023,23,1.2
+South Australia,Kidnapping/abduction,2024,19,1.0
+South Australia,Kidnapping/abduction,2025,6,0.3
+Tasmania,Kidnapping/abduction,2014,0,0.0
+Tasmania,Kidnapping/abduction,2015,0,0.0
+Tasmania,Kidnapping/abduction,2016,0,0.0
+Tasmania,Kidnapping/abduction,2017,0,0.0
+Tasmania,Kidnapping/abduction,2018,0,0.0
+Tasmania,Kidnapping/abduction,2019,0,0.0
+Tasmania,Kidnapping/abduction,2020,0,0.0
+Tasmania,Kidnapping/abduction,2021,0,0.0
+Tasmania,Kidnapping/abduction,2022,0,0.0
+Tasmania,Kidnapping/abduction,2023,0,0.0
+Tasmania,Kidnapping/abduction,2024,0,0.0
+Tasmania,Kidnapping/abduction,2025,0,0.0
+Victoria,Kidnapping/abduction,2014,24,0.4
+Victoria,Kidnapping/abduction,2015,19,0.3
+Victoria,Kidnapping/abduction,2016,35,0.6
+Victoria,Kidnapping/abduction,2017,40,0.6
+Victoria,Kidnapping/abduction,2018,25,0.4
+Victoria,Kidnapping/abduction,2019,42,0.6
+Victoria,Kidnapping/abduction,2020,39,0.6
+Victoria,Kidnapping/abduction,2021,33,0.5
+Victoria,Kidnapping/abduction,2022,47,0.7
+Victoria,Kidnapping/abduction,2023,34,0.5
+Victoria,Kidnapping/abduction,2024,49,0.7
+Victoria,Kidnapping/abduction,2025,51,0.7
+Western Australia,Kidnapping/abduction,2014,3,0.1
+Western Australia,Kidnapping/abduction,2015,10,0.4
+Western Australia,Kidnapping/abduction,2016,3,0.1
+Western Australia,Kidnapping/abduction,2017,6,0.2
+Western Australia,Kidnapping/abduction,2018,3,0.1
+Western Australia,Kidnapping/abduction,2019,3,0.1
+Western Australia,Kidnapping/abduction,2020,3,0.1
+Western Australia,Kidnapping/abduction,2021,3,0.1
+Western Australia,Kidnapping/abduction,2022,0,0.0
+Western Australia,Kidnapping/abduction,2023,8,0.3
+Western Australia,Kidnapping/abduction,2024,3,0.1
+Western Australia,Kidnapping/abduction,2025,7,0.2
+Australia,Sexual assault,2014,6961,29.7
+Australia,Sexual assault,2015,7719,32.4
+Australia,Sexual assault,2016,8197,33.9
+Australia,Sexual assault,2017,8688,35.3
+Australia,Sexual assault,2018,8826,35.4
+Australia,Sexual assault,2019,8985,35.5
+Australia,Sexual assault,2020,10175,39.7
+Australia,Sexual assault,2021,11362,44.2
+Australia,Sexual assault,2022,11944,46.0
+Australia,Sexual assault,2023,14069,52.8
+Australia,Sexual assault,2024,16281,59.9
+Australia,Sexual assault,2025,16146,58.5
+Australian Capital Territory,Sexual assault,2014,50,12.9
+Australian Capital Territory,Sexual assault,2015,83,21.0
+Australian Capital Territory,Sexual assault,2016,88,21.8
+Australian Capital Territory,Sexual assault,2017,66,15.9
+Australian Capital Territory,Sexual assault,2018,72,16.9
+Australian Capital Territory,Sexual assault,2019,115,26.4
+Australian Capital Territory,Sexual assault,2020,77,17.3
+Australian Capital Territory,Sexual assault,2021,113,25.0
+Australian Capital Territory,Sexual assault,2022,111,24.3
+Australian Capital Territory,Sexual assault,2023,119,25.5
+Australian Capital Territory,Sexual assault,2024,160,33.4
+Australian Capital Territory,Sexual assault,2025,149,30.7
+New South Wales,Sexual assault,2014,3044,40.5
+New South Wales,Sexual assault,2015,3208,42.1
+New South Wales,Sexual assault,2016,3292,42.6
+New South Wales,Sexual assault,2017,3424,43.6
+New South Wales,Sexual assault,2018,3459,43.5
+New South Wales,Sexual assault,2019,3533,43.9
+New South Wales,Sexual assault,2020,4288,52.9
+New South Wales,Sexual assault,2021,4701,58.1
+New South Wales,Sexual assault,2022,4678,57.4
+New South Wales,Sexual assault,2023,6017,72.1
+New South Wales,Sexual assault,2024,6996,82.4
+New South Wales,Sexual assault,2025,6452,75.1
+Northern Territory,Sexual assault,2014,111,45.7
+Northern Territory,Sexual assault,2015,120,49.0
+Northern Territory,Sexual assault,2016,106,43.1
+Northern Territory,Sexual assault,2017,140,56.6
+Northern Territory,Sexual assault,2018,98,39.7
+Northern Territory,Sexual assault,2019,79,32.0
+Northern Territory,Sexual assault,2020,111,44.9
+Northern Territory,Sexual assault,2021,90,36.3
+Northern Territory,Sexual assault,2022,114,45.5
+Northern Territory,Sexual assault,2023,122,48.3
+Northern Territory,Sexual assault,2024,79,30.3
+Northern Territory,Sexual assault,2025,136,51.1
+Queensland,Sexual assault,2014,1214,25.7
+Queensland,Sexual assault,2015,1433,30.0
+Queensland,Sexual assault,2016,1432,29.6
+Queensland,Sexual assault,2017,1541,31.3
+Queensland,Sexual assault,2018,1626,32.5
+Queensland,Sexual assault,2019,1671,32.8
+Queensland,Sexual assault,2020,1798,34.8
+Queensland,Sexual assault,2021,2156,41.3
+Queensland,Sexual assault,2022,2592,48.7
+Queensland,Sexual assault,2023,3359,61.5
+Queensland,Sexual assault,2024,3940,70.7
+Queensland,Sexual assault,2025,4115,72.6
+South Australia,Sexual assault,2014,591,35.0
+South Australia,Sexual assault,2015,626,36.8
+South Australia,Sexual assault,2016,603,35.2
+South Australia,Sexual assault,2017,643,37.2
+South Australia,Sexual assault,2018,603,34.5
+South Australia,Sexual assault,2019,585,33.1
+South Australia,Sexual assault,2020,595,33.2
+South Australia,Sexual assault,2021,689,38.2
+South Australia,Sexual assault,2022,643,35.3
+South Australia,Sexual assault,2023,724,39.1
+South Australia,Sexual assault,2024,738,39.2
+South Australia,Sexual assault,2025,789,41.5
+Tasmania,Sexual assault,2014,84,16.4
+Tasmania,Sexual assault,2015,65,12.6
+Tasmania,Sexual assault,2016,94,18.2
+Tasmania,Sexual assault,2017,82,15.6
+Tasmania,Sexual assault,2018,82,15.3
+Tasmania,Sexual assault,2019,101,18.4
+Tasmania,Sexual assault,2020,124,22.2
+Tasmania,Sexual assault,2021,194,34.2
+Tasmania,Sexual assault,2022,257,45.0
+Tasmania,Sexual assault,2023,243,42.4
+Tasmania,Sexual assault,2024,284,49.4
+Tasmania,Sexual assault,2025,269,46.6
+Victoria,Sexual assault,2014,1325,22.5
+Victoria,Sexual assault,2015,1673,27.8
+Victoria,Sexual assault,2016,1984,32.1
+Victoria,Sexual assault,2017,2086,33.1
+Victoria,Sexual assault,2018,2167,33.7
+Victoria,Sexual assault,2019,2140,32.7
+Victoria,Sexual assault,2020,2366,35.8
+Victoria,Sexual assault,2021,2522,38.5
+Victoria,Sexual assault,2022,2691,40.7
+Victoria,Sexual assault,2023,2516,36.9
+Victoria,Sexual assault,2024,2947,42.4
+Victoria,Sexual assault,2025,2972,42.0
+Western Australia,Sexual assault,2014,544,21.6
+Western Australia,Sexual assault,2015,502,19.8
+Western Australia,Sexual assault,2016,596,23.3
+Western Australia,Sexual assault,2017,715,27.7
+Western Australia,Sexual assault,2018,718,27.4
+Western Australia,Sexual assault,2019,757,28.5
+Western Australia,Sexual assault,2020,821,30.3
+Western Australia,Sexual assault,2021,909,33.1
+Western Australia,Sexual assault,2022,864,31.0
+Western Australia,Sexual assault,2023,960,33.3
+Western Australia,Sexual assault,2024,1142,38.4
+Western Australia,Sexual assault,2025,1263,41.5

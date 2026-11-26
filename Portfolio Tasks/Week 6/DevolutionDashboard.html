@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Devolution Dashboard | Billie Jones</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Karla:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/vega@6.4.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@6.4.3"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@7.3.0"></script>
+
+  <style>
+    .dashboard-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    .dashboard-grid figure { margin: 0; width: 100%; }
+    .dashboard-grid .vega-embed { width: 100%; }
+    @media (max-width: 900px) {
+      .dashboard-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 560px) {
+      .dashboard-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main">
+      <a class="nav-name" href="../index.html">Billie Jones</a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../projects.html">Projects</a></li>
+        <li><a href="../about.html">About Me</a></li>
+        <li><a href="../portfolio.html">PP434 Weekly Tasks</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>UK Devolution Dashboard</h1>
+    <p><a href="../portfolio.html">Back to portfolio</a></p>
+
+    <p>
+      Median gross weekly pay for full-time employees living in each area, 2008 to 2025,
+      for five local authorities and Greater London. Every chart uses the same vertical
+      scale, so the lines can be compared across charts.
+    </p>
+    <p>
+      Devolved governments and city-region mayors have varying powers over areas such as
+      skills, transport and economic development, so differences in pay show the starting
+      points they are working from.
+    </p>
+
+    <div id="dashboard" class="dashboard-grid"></div>
+
+    <p class="small">
+      Source: Office for National Statistics, Annual Survey of Hours and Earnings (resident
+      analysis), via the Nomis API. London is the Greater London region; the other five are
+      local authority areas.
+    </p>
+    <p class="small">
+      Notes: figures are in current pounds (not adjusted for inflation). Estimates from 2011
+      use a different occupation weighting, so compare them with earlier years with care.
+    </p>
+    <p>
+      <a href="[INSERT PUBLIC GOOGLE COLAB LINK FOR CC6]">Google Colab notebook (loop download)</a>
+    </p>
+  </main>
+
+  <script>
+    const BASE = "https://raw.githubusercontent.com/kjones2026/kjones2026.github.io/refs/heads/main/Week%206/Data/";
+
+    const places = [
+      { name: "Manchester", file: "ashe_manchester.json" },
+      { name: "Liverpool", file: "ashe_liverpool.json" },
+      { name: "Birmingham", file: "ashe_birmingham.json" },
+      { name: "Leeds", file: "ashe_leeds.json" },
+      { name: "Cardiff", file: "ashe_cardiff.json" },
+      { name: "Greater London", file: "ashe_london.json" }
+    ];
+
+    // One chart specification, reused for every place
+    function buildSpec(place, yMax) {
+      return {
+        "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+        "width": "container",
+        "height": 220,
+        "autosize": { "type": "fit", "contains": "padding" },
+        "title": { "text": place.name, "anchor": "start", "fontSize": 16 },
+        "data": { "url": BASE + place.file },
+        "mark": { "type": "line", "point": true, "strokeWidth": 2.5, "color": "#6B84B2" },
+        "encoding": {
+          "x": {
+            "field": "year",
+            "type": "quantitative",
+            "scale": { "domain": [2008, 2025] },
+            "axis": { "title": null, "format": "d", "values": [2008, 2012, 2016, 2020, 2024], "grid": false }
+          },
+          "y": {
+            "field": "weekly_pay",
+            "type": "quantitative",
+            "scale": { "domain": [0, yMax] },
+            "axis": { "title": "Weekly pay (£)", "format": ",.0f", "gridColor": "#e5e5e5" }
+          },
+          "tooltip": [
+            { "field": "region", "type": "nominal", "title": "Place" },
+            { "field": "year", "type": "quantitative", "title": "Year", "format": "d" },
+            { "field": "weekly_pay", "type": "quantitative", "title": "Weekly pay (£)", "format": ",.0f" }
+          ]
+        },
+        "config": { "view": { "strokeWidth": 0 } }
+      };
+    }
+
+    // Fetch all six files first so every chart can share one y-axis maximum
+    Promise.all(places.map(p => fetch(BASE + p.file).then(r => r.json())))
+      .then(allData => {
+        const maxPay = Math.max(...allData.flat().map(d => d.weekly_pay));
+        const yMax = Math.ceil(maxPay / 100) * 100;
+
+        const grid = document.getElementById("dashboard");
+
+        // LOOP: the embed code is written once and runs once per place (six times)
+        for (const place of places) {
+          const figure = document.createElement("figure");
+          figure.setAttribute("aria-label", "Line chart of median weekly pay in " + place.name);
+          grid.appendChild(figure);
+          vegaEmbed(figure, buildSpec(place, yMax), { actions: false }).catch(console.error);
+        }
+      })
+      .catch(console.error);
+  </script>
+
+</body>
+
+</html>

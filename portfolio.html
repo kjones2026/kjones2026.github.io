@@ -280,6 +280,45 @@
       </div>
     </section>
 
+    <!-- CC8 (Week 8) -->
+    <section>
+      <div class="chart-description">
+        <h2>CC8. Big Data. Extracting a story from millions of prices</h2>
+        <p>
+          Restaurant main course meals 2017-2026
+        </p>
+        <p>
+          <a href="https://colab.research.google.com/drive/1uopW98XnSOL_YO5Rhed8C7kQklIjL0Ph?usp=sharing">
+            Google Colab notebook (Wrote initial code here)
+          </a>
+        </p>
+      </div>
+
+      <div class="chart-row stacked">
+        <div class="chart-item">
+          <h3>Chart 1 (Line Chart): Median price of a restaurant main course in the UK</h3>
+          <figure id="Figure14"></figure>
+          <p>
+            The median price of restaurant main courses in the UK has increased by 40% since 2017. This is only £3.50 but given the high percentage increase I chose to show this visually with £0,50 increments.
+          </p>
+        </div>
+        <div class="chart-item">
+          <h3>Chart 2 (Distribution Chart): Median price of restuarant mains has shifted in last five years</h3>
+          <figure id="Figure15"></figure>
+          <p>
+            I chose these comparison years to avoid the impact of the decline in 2020–2021, likely attributable to COVID-19, and the incomplete data collection period in 2026, which could otherwise skew the results.
+          </p>
+        </div>
+        <div class="chart-item">
+          <h3>Chart 3 (Map): Some pleaces more expensive than others</h3>
+          <figure id="Figure16"></figure>
+          <p>
+            <em>Note that apart from London with 396 restaurants, remaining regions have less than 100 venues contributing to data.</em>
+          </p>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <script>
@@ -309,6 +348,11 @@
     let chart12 = "Week%207/cc7_coordinates_map.json";
     let chart13 = "Week%207/cc7_choropleth_map.json";
 
+    // Week 8
+    let chart14 = "Week%208/cc8_1_median_line.json";
+    let chart15 = "Week%208/cc8_2_restaurant_mains_distribution.json";
+    let chart16 = "Week%208/cc8_3_restaurant_mains_map.json";
+
     vegaEmbed('#Figure1', chart1).catch(console.error);
     vegaEmbed('#Figure2', chart2).catch(console.error);
     vegaEmbed('#Figure3', chart3).catch(console.error);
@@ -321,6 +365,9 @@
     vegaEmbed('#Figure11', chart11).catch(console.error);
     vegaEmbed('#Figure12', chart12).catch(console.error);
     vegaEmbed('#Figure13', chart13).catch(console.error);
+    vegaEmbed('#Figure14', chart14).catch(console.error);
+    vegaEmbed('#Figure15', chart15).catch(console.error);
+    vegaEmbed('#Figure16', chart16).catch(console.error);
   </script>
 
 </body>
