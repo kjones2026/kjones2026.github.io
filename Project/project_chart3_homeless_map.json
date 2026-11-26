@@ -1,0 +1,155 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 300,
+      "continuousHeight": 300
+    }
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/kjones2026/kjones2026.github.io/refs/heads/main/Project/Maps/au_sa3_2021_simplified.json",
+    "format": {
+      "type": "topojson",
+      "feature": "sa3"
+    }
+  },
+  "mark": {
+    "type": "geoshape",
+    "stroke": "white",
+    "strokeWidth": 0.4
+  },
+  "encoding": {
+    "color": {
+      "condition": {
+        "test": "datum.population >= 1000",
+        "field": "rate_per_10k",
+        "legend": {
+          "labelExpr": "['Under 20','20 to 39','40 to 59','60 to 99','100 to 199','200 to 499','500 or more'][datum.index]",
+          "labelFontSize": 12,
+          "orient": "right",
+          "symbolSize": 200,
+          "symbolType": "square",
+          "title": [
+            "Homeless per",
+            "10,000 residents"
+          ],
+          "titleFontSize": 12,
+          "type": "symbol"
+        },
+        "scale": {
+          "domain": [
+            20,
+            40,
+            60,
+            100,
+            200,
+            500
+          ],
+          "range": [
+            "#ffffcc",
+            "#ffeda0",
+            "#fed976",
+            "#feb24c",
+            "#fd8d3c",
+            "#e31a1c",
+            "#800026"
+          ],
+          "type": "threshold"
+        },
+        "type": "quantitative"
+      },
+      "value": "#d9d9d9"
+    },
+    "tooltip": [
+      {
+        "field": "properties.sa3_name",
+        "title": "Area",
+        "type": "nominal"
+      },
+      {
+        "field": "properties.state_name",
+        "title": "State",
+        "type": "nominal"
+      },
+      {
+        "field": "rate_per_10k",
+        "format": ".0f",
+        "title": "Homeless per 10,000",
+        "type": "quantitative"
+      },
+      {
+        "field": "all_homeless",
+        "format": ",",
+        "title": "People counted as homeless",
+        "type": "quantitative"
+      },
+      {
+        "field": "population",
+        "format": ",",
+        "title": "Residents",
+        "type": "quantitative"
+      }
+    ]
+  },
+  "height": 460,
+  "params": [
+    {
+      "name": "statePick",
+      "bind": {
+        "input": "select",
+        "options": [
+          "Australia",
+          "Australian Capital Territory",
+          "New South Wales",
+          "Northern Territory",
+          "Queensland",
+          "South Australia",
+          "Tasmania",
+          "Victoria",
+          "Western Australia"
+        ],
+        "name": "Zoom to "
+      },
+      "value": "Australia"
+    }
+  ],
+  "projection": {
+    "type": "mercator"
+  },
+  "title": {
+    "text": {
+      "expr": "'People experiencing homelessness per 10,000 residents, 2021: ' + statePick"
+    },
+    "subtitle": [
+      "Same colour bands for every state. Grey: under 1,000 residents, so no reliable rate.",
+      "Source: ABS Census 2021 (Estimating homelessness) and ABS estimated resident population; boundaries: ABS ASGS 2021"
+    ]
+  },
+  "transform": [
+    {
+      "filter": "statePick == 'Australia' || datum.properties.state_name == statePick"
+    },
+    {
+      "lookup": "properties.sa3_code",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/kjones2026/kjones2026.github.io/refs/heads/main/Project/census_2021_homeless_sa3.csv",
+          "format": {
+            "type": "csv",
+            "parse": {
+              "sa3_code": "string"
+            }
+          }
+        },
+        "key": "sa3_code",
+        "fields": [
+          "all_homeless",
+          "sleeping_rough",
+          "population",
+          "rate_per_10k"
+        ]
+      }
+    }
+  ],
+  "width": 520,
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.4.1.json"
+}
