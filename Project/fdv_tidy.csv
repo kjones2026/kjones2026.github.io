@@ -1,4 +1,91 @@
 area,offence,year,number,rate
+Australia,All four offences,2014,61510,478.4
+Australia,All four offences,2015,67298,517.2
+Australia,All four offences,2016,69373,526.9
+Australia,All four offences,2017,66762,499.8
+Australia,All four offences,2018,67645,500.0
+Australia,All four offences,2019,70305,513.1
+Australia,All four offences,2020,76186,549.5
+Australia,All four offences,2021,79333,570.1
+Australia,All four offences,2022,83711,596.0
+Australia,All four offences,2023,93466,650.5
+Australia,All four offences,2024,101171,689.8
+Australia,All four offences,2025,102984,692.7
+Australian Capital Territory,All four offences,2014,689,177.3
+Australian Capital Territory,All four offences,2015,795,201.0
+Australian Capital Territory,All four offences,2016,1041,258.2
+Australian Capital Territory,All four offences,2017,1040,250.6
+Australian Capital Territory,All four offences,2018,947,222.3
+Australian Capital Territory,All four offences,2019,1093,250.9
+Australian Capital Territory,All four offences,2020,1019,229.0
+Australian Capital Territory,All four offences,2021,1081,238.9
+Australian Capital Territory,All four offences,2022,1094,239.5
+Australian Capital Territory,All four offences,2023,1221,261.7
+Australian Capital Territory,All four offences,2024,1182,246.9
+Australian Capital Territory,All four offences,2025,1160,239.3
+New South Wales,All four offences,2014,32687,435.2
+New South Wales,All four offences,2015,33787,443.6
+New South Wales,All four offences,2016,33016,427.1
+New South Wales,All four offences,2017,32325,411.6
+New South Wales,All four offences,2018,33488,421.0
+New South Wales,All four offences,2019,34580,429.8
+New South Wales,All four offences,2020,35774,441.2
+New South Wales,All four offences,2021,37291,460.6
+New South Wales,All four offences,2022,37673,462.0
+New South Wales,All four offences,2023,42474,509.1
+New South Wales,All four offences,2024,45842,539.8
+New South Wales,All four offences,2025,45519,529.8
+Northern Territory,All four offences,2014,4397,1810.2
+Northern Territory,All four offences,2015,4230,1728.6
+Northern Territory,All four offences,2016,4119,1676.5
+Northern Territory,All four offences,2017,4625,1869.3
+Northern Territory,All four offences,2018,4460,1805.0
+Northern Territory,All four offences,2019,4112,1667.7
+Northern Territory,All four offences,2020,5245,2119.8
+Northern Territory,All four offences,2021,5830,2349.4
+Northern Territory,All four offences,2022,6921,2760.7
+Northern Territory,All four offences,2023,8054,3189.3
+Northern Territory,All four offences,2024,7588,2909.1
+Northern Territory,All four offences,2025,7312,2749.9
+Queensland,All four offences,2023,38893,712.3
+Queensland,All four offences,2024,40896,734.0
+Queensland,All four offences,2025,36379,641.7
+South Australia,All four offences,2014,7355,436.0
+South Australia,All four offences,2015,8414,494.8
+South Australia,All four offences,2016,8426,491.9
+South Australia,All four offences,2017,7814,452.0
+South Australia,All four offences,2018,7923,453.8
+South Australia,All four offences,2019,8629,488.3
+South Australia,All four offences,2020,9314,520.3
+South Australia,All four offences,2021,9510,527.6
+South Australia,All four offences,2022,10265,563.5
+South Australia,All four offences,2023,11425,616.7
+South Australia,All four offences,2024,12654,672.2
+South Australia,All four offences,2025,12676,666.6
+Tasmania,All four offences,2014,1221,237.8
+Tasmania,All four offences,2015,1269,246.4
+Tasmania,All four offences,2016,1422,274.8
+Tasmania,All four offences,2017,1513,287.3
+Tasmania,All four offences,2018,1549,288.3
+Tasmania,All four offences,2019,1682,306.9
+Tasmania,All four offences,2020,1725,309.3
+Tasmania,All four offences,2021,1817,320.3
+Tasmania,All four offences,2022,1980,346.4
+Tasmania,All four offences,2023,2069,361.0
+Tasmania,All four offences,2024,2287,397.8
+Tasmania,All four offences,2025,2242,388.1
+Western Australia,All four offences,2014,15161,602.1
+Western Australia,All four offences,2015,18803,740.2
+Western Australia,All four offences,2016,21349,835.2
+Western Australia,All four offences,2017,19445,752.0
+Western Australia,All four offences,2018,19278,736.4
+Western Australia,All four offences,2019,20209,759.9
+Western Australia,All four offences,2020,23109,851.8
+Western Australia,All four offences,2021,23804,865.8
+Western Australia,All four offences,2022,25778,924.6
+Western Australia,All four offences,2023,28223,979.5
+Western Australia,All four offences,2024,31618,1062.0
+Western Australia,All four offences,2025,34075,1118.6
 Australia,Assault,2014,56906,442.5
 Australia,Assault,2015,62476,480.1
 Australia,Assault,2016,64388,489.0
