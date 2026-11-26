@@ -1,0 +1,337 @@
+state_name,sa3_name,sleeping_rough,supported_accommodation,staying_with_others,boarding_houses,other_temporary_lodging,severely_crowded,all_homeless,sa3_code,sa4_name,rough_share,population,rate_per_10k
+New South Wales,Queanbeyan,8,52,33,18,12,68,190,10102,Capital Region,4.2,64892,29.3
+New South Wales,Snowy Mountains,5,9,58,4,0,47,123,10103,Capital Region,4.1,20720,59.4
+New South Wales,South Coast,14,78,80,13,29,55,269,10104,Capital Region,5.2,76437,35.2
+New South Wales,Goulburn - Mulwaree,4,15,19,42,0,14,96,10105,Capital Region,4.2,38484,24.9
+New South Wales,Young - Yass,0,6,34,0,3,38,86,10106,Capital Region,0.0,38085,22.6
+New South Wales,Gosford,6,73,95,60,5,64,299,10201,Central Coast,2.0,179150,16.7
+New South Wales,Wyong,17,128,103,68,96,99,508,10202,Central Coast,3.3,169343,30.0
+New South Wales,Bathurst,7,56,32,19,13,37,163,10301,Central West,4.3,49241,33.1
+New South Wales,Lachlan Valley,9,23,58,10,19,31,143,10302,Central West,6.3,54907,26.0
+New South Wales,Lithgow - Mudgee,3,10,25,8,6,31,80,10303,Central West,3.8,47891,16.7
+New South Wales,Orange,0,28,43,3,30,25,122,10304,Central West,0.0,61506,19.8
+New South Wales,Clarence Valley,24,32,66,15,11,55,198,10401,Coffs Harbour - Grafton,12.1,53760,36.8
+New South Wales,Coffs Harbour,70,66,128,20,27,97,406,10402,Coffs Harbour - Grafton,17.2,92436,43.9
+New South Wales,Bourke - Cobar - Coonamble,103,19,20,10,4,19,175,10501,Far West and Orana,58.9,22342,78.3
+New South Wales,Broken Hill and Far West,0,9,32,18,0,7,60,10502,Far West and Orana,0.0,19992,30.0
+New South Wales,Dubbo,6,61,77,26,12,114,294,10503,Far West and Orana,2.0,74846,39.3
+New South Wales,Lower Hunter,33,5,73,15,26,143,291,10601,Hunter Valley exc Newcastle,11.3,98553,29.5
+New South Wales,Maitland,3,30,56,19,8,46,161,10602,Hunter Valley exc Newcastle,1.9,87389,18.4
+New South Wales,Port Stephens,16,24,64,0,34,60,190,10603,Hunter Valley exc Newcastle,8.4,76403,24.9
+New South Wales,Upper Hunter,8,23,21,3,0,19,65,10604,Hunter Valley exc Newcastle,12.3,30725,21.2
+New South Wales,Dapto - Port Kembla,0,59,78,92,13,51,291,10701,Illawarra,0.0,79871,36.4
+New South Wales,Illawarra Catchment Reserve,0,0,0,0,0,0,0,10702,Illawarra,,5,0.0
+New South Wales,Kiama - Shellharbour,0,78,62,0,6,77,217,10703,Illawarra,0.0,99374,21.8
+New South Wales,Wollongong,7,189,74,182,36,51,537,10704,Illawarra,1.3,134841,39.8
+New South Wales,Great Lakes,6,8,27,0,3,22,64,10801,Mid North Coast,9.4,33203,19.3
+New South Wales,Kempsey - Nambucca,4,56,74,31,22,90,271,10802,Mid North Coast,1.5,51276,52.9
+New South Wales,Lord Howe Island,0,0,0,0,0,0,0,10803,Mid North Coast,,444,0.0
+New South Wales,Port Macquarie,11,75,97,15,30,65,293,10804,Mid North Coast,3.8,86654,33.8
+New South Wales,Taree - Gloucester,14,43,65,4,12,94,227,10805,Mid North Coast,6.2,57409,39.5
+New South Wales,Albury,3,35,38,67,34,54,232,10901,Murray,1.3,66976,34.6
+New South Wales,Lower Murray,0,0,10,0,0,27,44,10902,Murray,0.0,13093,33.6
+New South Wales,Upper Murray exc. Albury,0,16,46,0,0,7,72,10903,Murray,0.0,43313,16.6
+New South Wales,Armidale,0,70,18,17,6,37,147,11001,New England and North West,0.0,37766,38.9
+New South Wales,Inverell - Tenterfield,12,11,30,11,6,36,118,11002,New England and North West,10.2,38779,30.4
+New South Wales,Moree - Narrabri,8,43,19,3,3,36,112,11003,New England and North West,7.1,25037,44.7
+New South Wales,Tamworth - Gunnedah,3,66,51,18,11,45,188,11004,New England and North West,1.6,85390,22.0
+New South Wales,Lake Macquarie - East,0,26,90,0,20,39,182,11101,Newcastle and Lake Macquarie,0.0,126606,14.4
+New South Wales,Lake Macquarie - West,0,31,79,12,4,69,202,11102,Newcastle and Lake Macquarie,0.0,85113,23.7
+New South Wales,Newcastle,24,232,97,499,92,143,1081,11103,Newcastle and Lake Macquarie,2.2,179587,60.2
+New South Wales,Richmond Valley - Coastal,45,44,110,57,14,113,381,11201,Richmond - Tweed,11.8,87664,43.5
+New South Wales,Richmond Valley - Hinterland,29,116,102,26,44,61,371,11202,Richmond - Tweed,7.8,71940,51.6
+New South Wales,Tweed Valley,195,62,128,23,34,87,529,11203,Richmond - Tweed,36.9,97216,54.4
+New South Wales,Griffith - Murrumbidgee (West),12,58,32,18,7,150,276,11301,Riverina,4.3,49883,55.3
+New South Wales,Tumut - Tumbarumba,0,8,7,0,4,15,31,11302,Riverina,0.0,14933,20.8
+New South Wales,Wagga Wagga,11,105,62,44,23,73,327,11303,Riverina,3.4,99471,32.9
+New South Wales,Shoalhaven,67,137,114,4,23,84,432,11401,Southern Highlands and Shoalhaven,15.5,108349,39.9
+New South Wales,Southern Highlands,0,27,26,0,0,45,93,11402,Southern Highlands and Shoalhaven,0.0,52459,17.7
+New South Wales,Baulkham Hills,0,9,31,13,0,83,138,11501,Sydney - Baulkham Hills and Hawkesbury,0.0,155277,8.9
+New South Wales,Dural - Wisemans Ferry,0,0,8,0,0,34,39,11502,Sydney - Baulkham Hills and Hawkesbury,0.0,28034,13.9
+New South Wales,Hawkesbury,0,0,12,0,0,55,65,11503,Sydney - Baulkham Hills and Hawkesbury,0.0,25154,25.8
+New South Wales,Rouse Hill - McGraths Hill,0,0,7,0,0,57,65,11504,Sydney - Baulkham Hills and Hawkesbury,0.0,56966,11.4
+New South Wales,Blacktown,3,102,56,42,0,391,595,11601,Sydney - Blacktown,0.5,143598,41.4
+New South Wales,Blacktown - North,0,22,42,19,0,164,248,11602,Sydney - Blacktown,0.0,143785,17.2
+New South Wales,Mount Druitt,10,116,61,79,31,463,762,11603,Sydney - Blacktown,1.3,116792,65.2
+New South Wales,Botany,0,35,24,97,16,137,316,11701,Sydney - City and Inner South,0.0,59245,53.3
+New South Wales,Marrickville - Sydenham - Petersham,0,102,19,784,0,162,1069,11702,Sydney - City and Inner South,0.0,55133,193.9
+New South Wales,Sydney Inner City,64,330,85,1971,331,731,3505,11703,Sydney - City and Inner South,1.8,220973,158.6
+New South Wales,Eastern Suburbs - North,7,83,33,627,4,43,802,11801,Sydney - Eastern Suburbs,0.9,128419,62.5
+New South Wales,Eastern Suburbs - South,3,75,46,633,0,113,868,11802,Sydney - Eastern Suburbs,0.3,135210,64.2
+New South Wales,Bankstown,0,63,44,92,0,862,1056,11901,Sydney - Inner South West,0.0,186879,56.5
+New South Wales,Canterbury,0,93,25,231,0,1060,1408,11902,Sydney - Inner South West,0.0,141730,99.3
+New South Wales,Hurstville,0,39,37,45,0,353,472,11903,Sydney - Inner South West,0.0,132318,35.7
+New South Wales,Kogarah - Rockdale,0,58,34,176,0,352,623,11904,Sydney - Inner South West,0.0,146589,42.5
+New South Wales,Canada Bay,0,41,27,84,0,79,231,12001,Sydney - Inner West,0.0,87181,26.5
+New South Wales,Leichhardt,0,66,27,287,0,16,400,12002,Sydney - Inner West,0.0,56653,70.6
+New South Wales,Strathfield - Burwood - Ashfield,6,198,53,876,6,744,1882,12003,Sydney - Inner West,0.3,162611,115.7
+New South Wales,Chatswood - Lane Cove,4,13,26,109,6,72,230,12101,Sydney - North Sydney and Hornsby,1.7,118072,19.5
+New South Wales,Hornsby,0,22,10,7,5,115,155,12102,Sydney - North Sydney and Hornsby,0.0,87691,17.7
+New South Wales,Ku-ring-gai,0,0,25,10,0,18,52,12103,Sydney - North Sydney and Hornsby,0.0,124990,4.2
+New South Wales,North Sydney - Mosman,0,16,20,288,4,31,358,12104,Sydney - North Sydney and Hornsby,0.0,95419,37.5
+New South Wales,Manly,0,0,12,36,17,0,72,12201,Sydney - Northern Beaches,0.0,43590,16.5
+New South Wales,Pittwater,3,0,21,0,0,15,36,12202,Sydney - Northern Beaches,8.3,63581,5.7
+New South Wales,Warringah,4,28,38,62,0,213,346,12203,Sydney - Northern Beaches,1.2,157396,22.0
+New South Wales,Camden,0,11,21,0,30,41,97,12301,Sydney - Outer South West,0.0,73973,13.1
+New South Wales,Campbelltown (NSW),0,204,70,50,6,468,812,12302,Sydney - Outer South West,0.0,179152,45.3
+New South Wales,Wollondilly,4,0,25,31,4,44,107,12303,Sydney - Outer South West,3.7,46026,23.2
+New South Wales,Blue Mountains,0,40,36,11,0,30,121,12401,Sydney - Outer West and Blue Mountains,0.0,78199,15.5
+New South Wales,Blue Mountains - South,0,0,0,0,0,0,0,12402,Sydney - Outer West and Blue Mountains,,7,0.0
+New South Wales,Penrith,11,197,77,111,0,106,501,12403,Sydney - Outer West and Blue Mountains,2.2,160496,31.2
+New South Wales,Richmond - Windsor,3,71,21,0,15,66,176,12404,Sydney - Outer West and Blue Mountains,1.7,38270,46.0
+New South Wales,St Marys,0,17,26,5,0,211,266,12405,Sydney - Outer West and Blue Mountains,0.0,57150,46.5
+New South Wales,Auburn,7,14,22,192,42,958,1226,12501,Sydney - Parramatta,0.6,104476,117.3
+New South Wales,Carlingford,0,60,16,31,0,69,180,12502,Sydney - Parramatta,0.0,74358,24.2
+New South Wales,Merrylands - Guildford,6,66,42,84,0,1112,1311,12503,Sydney - Parramatta,0.5,164798,79.6
+New South Wales,Parramatta,10,131,34,39,31,284,529,12504,Sydney - Parramatta,1.9,153321,34.5
+New South Wales,Pennant Hills - Epping,0,0,14,3,0,75,95,12601,Sydney - Ryde,0.0,55057,17.3
+New South Wales,Ryde - Hunters Hill,0,34,34,102,0,223,391,12602,Sydney - Ryde,0.0,147944,26.4
+New South Wales,Bringelly - Green Valley,0,73,41,4,0,416,537,12701,Sydney - South West,0.0,143807,37.3
+New South Wales,Fairfield,0,120,60,45,0,1194,1423,12702,Sydney - South West,0.0,195725,72.7
+New South Wales,Liverpool,5,136,45,42,65,245,537,12703,Sydney - South West,0.9,136871,39.2
+New South Wales,Cronulla - Miranda - Caringbah,0,23,27,35,8,45,142,12801,Sydney - Sutherland,0.0,118252,12.0
+New South Wales,Sutherland - Menai - Heathcote,0,15,31,9,7,31,103,12802,Sydney - Sutherland,0.0,112140,9.2
+Victoria,Ballarat,27,315,64,121,62,47,625,20101,Ballarat,4.3,115935,53.9
+Victoria,Creswick - Daylesford - Ballan,8,23,19,0,0,0,55,20102,Ballarat,14.5,30788,17.9
+Victoria,Maryborough - Pyrenees,7,13,18,0,0,15,54,20103,Ballarat,13.0,26588,20.3
+Victoria,Bendigo,25,177,52,63,58,178,551,20201,Bendigo,4.5,102940,53.5
+Victoria,Heathcote - Castlemaine - Kyneton,3,55,24,4,0,16,115,20202,Bendigo,2.6,52185,22.0
+Victoria,Loddon - Elmore,0,0,21,0,0,10,27,20203,Bendigo,0.0,12141,22.2
+Victoria,Barwon - West,0,9,11,0,0,3,29,20301,Geelong,0.0,22397,12.9
+Victoria,Geelong,24,248,113,787,88,245,1504,20302,Geelong,1.6,212023,70.9
+Victoria,Surf Coast - Bellarine Peninsula,9,9,36,14,0,16,77,20303,Geelong,11.7,93195,8.3
+Victoria,Upper Goulburn Valley,29,51,40,14,6,50,195,20401,Hume,14.9,59693,32.7
+Victoria,Wangaratta - Benalla,14,86,21,13,5,14,150,20402,Hume,9.3,48279,31.1
+Victoria,Wodonga - Alpine,22,104,48,24,11,55,262,20403,Hume,8.4,76236,34.4
+Victoria,Baw Baw,4,41,31,0,12,51,134,20501,Latrobe - Gippsland,3.0,57761,23.2
+Victoria,Gippsland - East,14,98,61,28,12,0,214,20502,Latrobe - Gippsland,6.5,48588,44.0
+Victoria,Gippsland - South West,0,48,43,8,3,18,118,20503,Latrobe - Gippsland,0.0,71238,16.6
+Victoria,Latrobe Valley,10,159,39,60,76,49,397,20504,Latrobe - Gippsland,2.5,76967,51.6
+Victoria,Wellington,8,29,28,40,0,19,126,20505,Latrobe - Gippsland,6.3,45358,27.8
+Victoria,Brunswick - Coburg,76,75,31,164,8,69,419,20601,Melbourne - Inner,18.1,91068,46.0
+Victoria,Darebin - South,18,128,14,18,12,29,218,20602,Melbourne - Inner,8.3,53875,40.5
+Victoria,Essendon,3,134,16,77,16,39,292,20603,Melbourne - Inner,1.0,69421,42.1
+Victoria,Melbourne City,127,292,60,155,378,148,1163,20604,Melbourne - Inner,10.9,153091,76.0
+Victoria,Port Phillip,33,180,63,657,98,38,1067,20605,Melbourne - Inner,3.1,103458,103.1
+Victoria,Stonnington - West,3,104,25,85,3,0,215,20606,Melbourne - Inner,1.4,63519,33.8
+Victoria,Yarra,40,166,23,317,5,24,572,20607,Melbourne - Inner,7.0,92481,61.9
+Victoria,Boroondara,12,76,38,147,12,38,320,20701,Melbourne - Inner East,3.8,169789,18.8
+Victoria,Manningham - West,0,46,15,61,0,35,161,20702,Melbourne - Inner East,0.0,99303,16.2
+Victoria,Whitehorse - West,0,139,26,715,57,64,998,20703,Melbourne - Inner East,0.0,108426,92.0
+Victoria,Bayside,6,62,22,28,0,27,147,20801,Melbourne - Inner South,4.1,102328,14.4
+Victoria,Glen Eira,0,199,44,222,18,133,612,20802,Melbourne - Inner South,0.0,158280,38.7
+Victoria,Kingston,3,169,49,45,47,30,341,20803,Melbourne - Inner South,0.9,123786,27.5
+Victoria,Stonnington - East,0,53,3,181,4,8,250,20804,Melbourne - Inner South,0.0,42671,58.6
+Victoria,Banyule,16,223,33,123,9,134,535,20901,Melbourne - North East,3.0,127370,42.0
+Victoria,Darebin - North,77,276,43,218,30,179,810,20902,Melbourne - North East,9.5,96421,84.0
+Victoria,Nillumbik - Kinglake,5,16,18,6,17,39,94,20903,Melbourne - North East,5.3,67687,13.9
+Victoria,Whittlesea - Wallan,22,216,68,150,23,381,866,20904,Melbourne - North East,2.5,254784,34.0
+Victoria,Keilor,0,21,17,0,18,0,53,21001,Melbourne - North West,0.0,62124,8.5
+Victoria,Macedon Ranges,0,0,16,0,0,0,17,21002,Melbourne - North West,0.0,33213,5.1
+Victoria,Moreland - North,10,89,22,25,21,127,289,21003,Melbourne - North West,3.5,81472,35.5
+Victoria,Sunbury,0,32,17,0,3,9,67,21004,Melbourne - North West,0.0,45464,14.7
+Victoria,Tullamarine - Broadmeadows,21,210,53,100,4,696,1082,21005,Melbourne - North West,1.9,206755,52.3
+Victoria,Knox,7,173,59,98,51,45,427,21101,Melbourne - Outer East,1.6,160520,26.6
+Victoria,Manningham - East,0,11,5,0,0,0,16,21102,Melbourne - Outer East,0.0,26591,6.0
+Victoria,Maroondah,16,240,26,84,23,83,474,21103,Melbourne - Outer East,3.4,115610,41.0
+Victoria,Whitehorse - East,4,110,12,74,0,33,230,21104,Melbourne - Outer East,1.7,63435,36.3
+Victoria,Yarra Ranges,3,108,49,82,30,136,409,21105,Melbourne - Outer East,0.7,156602,26.1
+Victoria,Cardinia,7,68,47,26,0,177,337,21201,Melbourne - South East,2.1,119721,28.1
+Victoria,Casey - North,0,131,38,230,22,399,818,21202,Melbourne - South East,0.0,138661,59.0
+Victoria,Casey - South,0,114,78,130,5,704,1037,21203,Melbourne - South East,0.0,230897,44.9
+Victoria,Dandenong,22,416,51,783,87,1211,2567,21204,Melbourne - South East,0.9,195868,131.1
+Victoria,Monash,10,220,39,1099,44,222,1634,21205,Melbourne - South East,0.6,185251,88.2
+Victoria,Brimbank,46,311,56,183,46,863,1501,21301,Melbourne - West,3.1,188038,79.8
+Victoria,Hobsons Bay,3,81,30,51,0,66,232,21302,Melbourne - West,1.3,87456,26.5
+Victoria,Maribyrnong,0,234,29,299,34,231,821,21303,Melbourne - West,0.0,86385,95.0
+Victoria,Melton - Bacchus Marsh,0,122,64,32,16,420,652,21304,Melbourne - West,0.0,201101,32.4
+Victoria,Wyndham,9,145,75,111,27,715,1084,21305,Melbourne - West,0.8,301133,36.0
+Victoria,Frankston,33,176,65,431,11,77,785,21401,Mornington Peninsula,4.2,140824,55.7
+Victoria,Mornington Peninsula,50,101,107,89,12,64,421,21402,Mornington Peninsula,11.9,170440,24.7
+Victoria,Grampians,3,94,36,4,9,78,224,21501,North West,1.3,60060,37.3
+Victoria,Mildura,9,95,43,42,8,148,348,21502,North West,2.6,56966,61.1
+Victoria,Murray River - Swan Hill,41,47,34,41,10,93,261,21503,North West,15.7,38128,68.5
+Victoria,Campaspe,4,31,46,5,5,27,113,21601,Shepparton,3.5,38714,29.2
+Victoria,Moira,12,15,34,8,0,12,78,21602,Shepparton,15.4,30367,25.7
+Victoria,Shepparton,37,170,43,21,7,137,418,21603,Shepparton,8.9,68325,61.2
+Victoria,Glenelg - Southern Grampians,6,72,19,0,13,28,139,21701,Warrnambool and South West,4.3,36607,38.0
+Victoria,Colac - Corangamite,9,55,30,4,0,30,130,21703,Warrnambool and South West,6.9,38299,33.9
+Victoria,Warrnambool,6,108,33,0,21,45,217,21704,Warrnambool and South West,2.8,52725,41.2
+Queensland,Capalaba,15,13,56,3,0,26,121,30101,Brisbane - East,12.4,74516,16.2
+Queensland,Cleveland - Stradbroke,21,9,64,4,0,36,135,30102,Brisbane - East,15.6,94836,14.2
+Queensland,Wynnum - Manly,14,47,46,37,0,8,144,30103,Brisbane - East,9.7,74093,19.4
+Queensland,Bald Hills - Everton Park,0,9,20,0,0,28,52,30201,Brisbane - North,0.0,46713,11.1
+Queensland,Chermside,3,67,39,17,3,16,145,30202,Brisbane - North,2.1,75363,19.2
+Queensland,Nundah,0,91,27,19,4,20,158,30203,Brisbane - North,0.0,43628,36.2
+Queensland,Sandgate,16,84,55,41,0,44,240,30204,Brisbane - North,6.7,62078,38.7
+Queensland,Carindale,0,40,21,20,0,7,83,30301,Brisbane - South,0.0,55098,15.1
+Queensland,Holland Park - Yeronga,4,73,44,199,27,64,404,30302,Brisbane - South,1.0,80735,50.0
+Queensland,Mt Gravatt,0,100,45,81,0,71,296,30303,Brisbane - South,0.0,80648,36.7
+Queensland,Nathan,0,24,17,19,0,68,123,30304,Brisbane - South,0.0,40480,30.4
+Queensland,Rocklea - Acacia Ridge,0,43,23,16,0,82,160,30305,Brisbane - South,0.0,69112,23.2
+Queensland,Sunnybank,0,28,21,36,0,173,252,30306,Brisbane - South,0.0,51086,49.3
+Queensland,Centenary,0,0,8,0,0,18,24,30401,Brisbane - West,0.0,33397,7.2
+Queensland,Kenmore - Brookfield - Moggill,0,7,21,7,0,14,45,30402,Brisbane - West,0.0,48311,9.3
+Queensland,Sherwood - Indooroopilly,0,11,26,42,0,34,107,30403,Brisbane - West,0.0,55195,19.4
+Queensland,The Gap - Enoggera,0,15,32,15,0,11,62,30404,Brisbane - West,0.0,55021,11.3
+Queensland,Brisbane Inner,118,272,38,594,130,50,1199,30501,Brisbane Inner City,9.8,89393,134.1
+Queensland,Brisbane Inner - East,0,16,17,82,0,26,138,30502,Brisbane Inner City,0.0,45079,30.6
+Queensland,Brisbane Inner - North,3,51,32,132,9,15,253,30503,Brisbane Inner City,1.2,101823,24.8
+Queensland,Brisbane Inner - West,0,16,35,135,0,10,205,30504,Brisbane Inner City,0.0,61361,33.4
+Queensland,Cairns - North,0,11,56,9,5,25,99,30601,Cairns,0.0,58571,16.9
+Queensland,Cairns - South,54,298,131,255,22,306,1068,30602,Cairns,5.1,106973,99.8
+Queensland,Innisfail - Cassowary Coast,69,25,97,18,0,368,582,30603,Cairns,11.9,35814,162.5
+Queensland,Port Douglas - Daintree,13,6,42,0,21,20,96,30604,Cairns,13.5,12356,77.7
+Queensland,Tablelands (East) - Kuranda,44,28,115,8,6,193,384,30605,Cairns,11.5,43351,88.6
+Queensland,Darling Downs (West) - Maranoa,23,32,53,0,4,69,181,30701,Darling Downs - Maranoa,12.7,44716,40.5
+Queensland,Darling Downs - East,13,7,59,3,0,97,183,30702,Darling Downs - Maranoa,7.1,43418,42.1
+Queensland,Granite Belt,7,5,43,0,0,78,136,30703,Darling Downs - Maranoa,5.1,41902,32.5
+Queensland,Central Highlands (Qld),33,24,62,5,10,68,202,30801,Central Queensland,16.3,29338,68.9
+Queensland,Rockhampton,45,115,154,125,3,83,527,30803,Central Queensland,8.5,122759,42.9
+Queensland,Biloela,5,16,10,0,0,0,34,30804,Central Queensland,14.7,14657,23.2
+Queensland,Gladstone,38,55,76,42,7,72,290,30805,Central Queensland,13.1,64275,45.1
+Queensland,Broadbeach - Burleigh,21,44,48,52,20,26,216,30901,Gold Coast,9.7,67242,32.1
+Queensland,Coolangatta,47,20,50,4,10,33,166,30902,Gold Coast,28.3,58186,28.5
+Queensland,Gold Coast - North,7,41,58,40,8,48,202,30903,Gold Coast,3.5,70091,28.8
+Queensland,Gold Coast Hinterland,11,0,9,3,0,26,54,30904,Gold Coast,20.4,20347,26.5
+Queensland,Mudgeeraba - Tallebudgera,0,0,21,0,0,42,62,30905,Gold Coast,0.0,36504,17.0
+Queensland,Nerang,7,25,56,7,0,64,155,30906,Gold Coast,4.5,70687,21.9
+Queensland,Ormeau - Oxenford,12,65,125,13,0,76,290,30907,Gold Coast,4.1,160692,18.0
+Queensland,Robina,0,0,45,3,3,23,78,30908,Gold Coast,0.0,54628,14.3
+Queensland,Southport,35,88,62,167,0,59,414,30909,Gold Coast,8.5,65391,63.3
+Queensland,Surfers Paradise,40,0,26,30,25,80,199,30910,Gold Coast,20.1,45723,43.5
+Queensland,Forest Lake - Oxley,0,60,47,21,6,228,360,31001,Ipswich,0.0,80183,44.9
+Queensland,Ipswich Hinterland,17,4,88,4,0,41,155,31002,Ipswich,11.0,68411,22.7
+Queensland,Ipswich Inner,70,129,89,86,0,163,532,31003,Ipswich,13.2,117812,45.2
+Queensland,Springfield - Redbank,12,53,77,0,0,315,454,31004,Ipswich,2.6,107223,42.3
+Queensland,Beaudesert,4,6,6,0,0,11,31,31101,Logan - Beaudesert,12.9,14913,20.8
+Queensland,Beenleigh,57,40,43,0,0,60,196,31102,Logan - Beaudesert,29.1,46995,41.7
+Queensland,Browns Plains,0,21,68,7,0,342,435,31103,Logan - Beaudesert,0.0,95375,45.6
+Queensland,Jimboomba,3,0,53,9,0,125,185,31104,Logan - Beaudesert,1.6,62626,29.5
+Queensland,Loganlea - Carbrook,12,42,61,15,0,125,257,31105,Logan - Beaudesert,4.7,65408,39.3
+Queensland,Springwood - Kingston,26,160,53,3,0,363,609,31106,Logan - Beaudesert,4.3,80269,75.9
+Queensland,Bowen Basin - North,16,13,68,11,0,27,136,31201,Mackay - Isaac - Whitsunday,11.8,36363,37.4
+Queensland,Mackay,23,154,108,73,8,93,458,31202,Mackay - Isaac - Whitsunday,5.0,123148,37.2
+Queensland,Whitsunday,8,20,58,9,14,16,119,31203,Mackay - Isaac - Whitsunday,6.7,23698,50.2
+Queensland,Bribie - Beachmere,3,0,52,0,0,61,115,31301,Moreton Bay - North,2.6,37510,30.7
+Queensland,Caboolture,27,109,121,3,0,173,441,31302,Moreton Bay - North,6.1,81214,54.3
+Queensland,Caboolture Hinterland,3,3,13,0,0,26,46,31303,Moreton Bay - North,6.5,15108,30.4
+Queensland,Narangba - Burpengary,0,7,51,0,0,58,121,31304,Moreton Bay - North,0.0,70466,17.2
+Queensland,Redcliffe,66,20,81,12,6,82,268,31305,Moreton Bay - North,24.6,64679,41.4
+Queensland,The Hills District,0,5,39,0,0,45,97,31401,Moreton Bay - South,0.0,91313,10.6
+Queensland,North Lakes,0,18,77,6,3,83,191,31402,Moreton Bay - South,0.0,89816,21.3
+Queensland,Strathpine,0,32,44,10,0,78,158,31403,Moreton Bay - South,0.0,40427,39.1
+Queensland,Far North,123,6,57,4,7,596,791,31501,Queensland - Outback,15.5,33057,239.3
+Queensland,Outback - North,204,126,63,22,0,552,970,31502,Queensland - Outback,21.0,31131,311.6
+Queensland,Outback - South,10,25,44,4,7,23,110,31503,Queensland - Outback,9.1,17417,63.2
+Queensland,Buderim,0,8,42,12,0,35,99,31601,Sunshine Coast,0.0,59782,16.6
+Queensland,Caloundra,60,116,96,9,9,51,334,31602,Sunshine Coast,18.0,97297,34.3
+Queensland,Maroochy,42,50,57,26,24,41,239,31603,Sunshine Coast,17.6,64537,37.0
+Queensland,Noosa,19,25,45,11,8,3,106,31605,Sunshine Coast,17.9,47074,22.5
+Queensland,Sunshine Coast Hinterland,42,7,77,9,0,90,224,31606,Sunshine Coast,18.8,59676,37.5
+Queensland,Nambour,60,82,69,11,0,66,284,31607,Sunshine Coast,21.1,50618,56.1
+Queensland,Noosa Hinterland,4,5,33,7,0,52,98,31608,Sunshine Coast,4.1,24524,40.0
+Queensland,Toowoomba,96,211,136,87,19,280,821,31701,Toowoomba,11.7,164082,50.0
+Queensland,Charters Towers - Ayr - Ingham,18,25,92,9,4,162,310,31801,Townsville,5.8,41877,74.0
+Queensland,Townsville,56,264,223,154,18,192,902,31802,Townsville,6.2,195506,46.1
+Queensland,Bundaberg,41,142,197,33,8,178,600,31901,Wide Bay,6.8,94646,63.4
+Queensland,Burnett,12,18,89,8,4,135,266,31902,Wide Bay,4.5,50134,53.1
+Queensland,Gympie - Cooloola,121,63,113,0,0,62,359,31903,Wide Bay,33.7,53749,66.8
+Queensland,Hervey Bay,23,66,123,0,8,74,296,31904,Wide Bay,7.8,64045,46.2
+Queensland,Maryborough,43,66,63,27,4,108,311,31905,Wide Bay,13.8,48118,64.6
+South Australia,Adelaide City,83,131,6,120,18,27,398,40101,Adelaide - Central and Hills,20.9,25522,155.9
+South Australia,Adelaide Hills,0,12,43,6,0,10,72,40102,Adelaide - Central and Hills,0.0,80493,8.9
+South Australia,Burnside,0,3,11,3,3,8,37,40103,Adelaide - Central and Hills,0.0,46425,8.0
+South Australia,Campbelltown (SA),0,55,23,24,0,6,105,40104,Adelaide - Central and Hills,0.0,55832,18.8
+South Australia,Norwood - Payneham - St Peters,0,5,15,17,0,33,70,40105,Adelaide - Central and Hills,0.0,37823,18.5
+South Australia,Prospect - Walkerville,0,3,14,3,30,18,69,40106,Adelaide - Central and Hills,0.0,30573,22.6
+South Australia,Unley,4,25,23,20,0,10,74,40107,Adelaide - Central and Hills,5.4,39061,18.9
+South Australia,Gawler - Two Wells,9,60,29,0,0,29,127,40201,Adelaide - North,7.1,38132,33.3
+South Australia,Playford,8,287,120,9,37,343,806,40202,Adelaide - North,1.0,101299,79.6
+South Australia,Port Adelaide - East,0,172,46,29,37,297,584,40203,Adelaide - North,0.0,77963,74.9
+South Australia,Salisbury,7,211,84,40,65,400,803,40204,Adelaide - North,0.9,146249,54.9
+South Australia,Tea Tree Gully,0,19,63,0,0,57,137,40205,Adelaide - North,0.0,97491,14.1
+South Australia,Holdfast Bay,3,3,24,14,3,0,54,40301,Adelaide - South,5.6,36011,15.0
+South Australia,Marion,0,158,69,48,24,58,355,40302,Adelaide - South,0.0,97231,36.5
+South Australia,Mitcham,4,24,24,46,0,24,115,40303,Adelaide - South,3.5,66822,17.2
+South Australia,Onkaparinga,17,378,166,17,3,84,669,40304,Adelaide - South,2.5,177935,37.6
+South Australia,Charles Sturt,3,220,61,88,6,92,467,40401,Adelaide - West,0.6,119680,39.0
+South Australia,Port Adelaide - West,9,154,62,62,5,129,419,40402,Adelaide - West,2.1,61528,68.1
+South Australia,West Torrens,3,30,33,64,8,68,201,40403,Adelaide - West,1.5,65802,30.5
+South Australia,Barossa,0,7,37,0,3,12,59,40501,Barossa - Yorke - Mid North,0.0,38791,15.2
+South Australia,Lower North,7,0,22,5,0,14,38,40502,Barossa - Yorke - Mid North,18.4,23149,16.4
+South Australia,Mid North,6,93,30,0,0,23,153,40503,Barossa - Yorke - Mid North,3.9,27831,55.0
+South Australia,Yorke Peninsula,0,3,29,0,0,8,42,40504,Barossa - Yorke - Mid North,0.0,27176,15.5
+South Australia,Eyre Peninsula and South West,19,152,75,4,3,69,330,40601,South Australia - Outback,5.8,58861,56.1
+South Australia,Outback - North and East,81,67,52,3,5,335,542,40602,South Australia - Outback,14.9,26699,203.0
+South Australia,Fleurieu - Kangaroo Island,0,0,38,0,5,53,95,40701,South Australia - South East,0.0,56616,16.8
+South Australia,Limestone Coast,22,71,42,31,3,66,238,40702,South Australia - South East,9.2,68531,34.7
+South Australia,Murray and Mallee,41,144,85,0,5,79,351,40703,South Australia - South East,11.7,73075,48.0
+Western Australia,Augusta - Margaret River - Busselton,82,13,56,10,7,61,218,50101,Bunbury,37.6,59209,36.8
+Western Australia,Bunbury,64,48,114,53,0,91,371,50102,Bunbury,17.3,111276,33.3
+Western Australia,Manjimup,35,10,42,0,0,12,90,50103,Bunbury,38.9,24491,36.7
+Western Australia,Mandurah,62,79,105,0,5,19,264,50201,Mandurah,23.5,111295,23.7
+Western Australia,Cottesloe - Claremont,3,0,26,0,0,20,53,50301,Perth - Inner,5.7,74147,7.1
+Western Australia,Perth City,416,404,53,84,47,7,1018,50302,Perth - Inner,40.9,114608,88.8
+Western Australia,Bayswater - Bassendean,33,59,37,15,0,32,168,50401,Perth - North East,19.6,87492,19.2
+Western Australia,Mundaring,0,30,31,0,0,3,75,50402,Perth - North East,0.0,45323,16.5
+Western Australia,Swan,408,179,133,12,0,221,950,50403,Perth - North East,42.9,153876,61.7
+Western Australia,Joondalup,108,25,86,7,0,22,249,50501,Perth - North West,43.4,165701,15.0
+Western Australia,Stirling,30,29,109,5,10,113,299,50502,Perth - North West,10.0,215487,13.9
+Western Australia,Wanneroo,39,35,113,9,0,328,525,50503,Perth - North West,7.4,215800,24.3
+Western Australia,Armadale,39,26,70,27,0,93,250,50601,Perth - South East,15.6,97644,25.6
+Western Australia,Belmont - Victoria Park,18,37,35,63,6,45,211,50602,Perth - South East,8.5,78173,27.0
+Western Australia,Canning,12,52,53,58,0,85,257,50603,Perth - South East,4.7,102728,25.0
+Western Australia,Gosnells,29,50,67,16,3,137,297,50604,Perth - South East,9.8,131366,22.6
+Western Australia,Kalamunda,81,23,47,0,0,13,169,50605,Perth - South East,47.9,60804,27.8
+Western Australia,Serpentine - Jarrahdale,0,0,22,7,0,12,37,50606,Perth - South East,0.0,33418,11.1
+Western Australia,South Perth,0,0,26,18,6,9,54,50607,Perth - South East,0.0,45002,12.0
+Western Australia,Cockburn,44,23,51,97,0,36,255,50701,Perth - South West,17.3,119882,21.3
+Western Australia,Fremantle,100,32,41,28,0,8,212,50702,Perth - South West,47.2,41348,51.3
+Western Australia,Kwinana,31,25,50,8,0,29,140,50703,Perth - South West,22.1,47660,29.4
+Western Australia,Melville,18,26,54,5,0,37,134,50704,Perth - South West,13.4,109500,12.2
+Western Australia,Rockingham,37,13,94,0,0,36,178,50705,Perth - South West,20.8,140584,12.7
+Western Australia,Albany,167,25,80,0,5,50,328,50901,Western Australia - Wheat Belt,50.9,63947,51.3
+Western Australia,Wheat Belt - North,27,28,69,35,0,22,184,50902,Western Australia - Wheat Belt,14.7,57730,31.9
+Western Australia,Wheat Belt - South,11,7,20,0,0,8,41,50903,Western Australia - Wheat Belt,26.8,19940,20.6
+Western Australia,Kimberley,109,124,129,16,9,648,1031,51001,Western Australia - Outback (North),10.6,38706,266.4
+Western Australia,East Pilbara,95,47,49,0,0,271,465,51002,Western Australia - Outback (North),20.4,27044,171.9
+Western Australia,West Pilbara,14,6,35,3,0,59,117,51003,Western Australia - Outback (North),12.0,31193,37.5
+Western Australia,Esperance,21,13,18,0,0,6,62,51101,Western Australia - Outback (South),33.9,16557,37.4
+Western Australia,Gascoyne,26,36,36,0,5,75,184,51102,Western Australia - Outback (South),14.1,9971,184.5
+Western Australia,Goldfields,83,87,89,59,0,163,489,51103,Western Australia - Outback (South),17.0,40200,121.6
+Western Australia,Mid West,69,28,105,14,0,161,380,51104,Western Australia - Outback (South),18.2,57263,66.4
+Tasmania,Brighton,0,0,34,0,0,31,68,60101,Hobart,0.0,19862,34.2
+Tasmania,Hobart - North East,0,26,59,20,0,34,145,60102,Hobart,0.0,59934,24.2
+Tasmania,Hobart - North West,19,60,72,23,0,155,342,60103,Hobart,5.6,58845,58.1
+Tasmania,Hobart - South and West,0,32,23,0,0,5,59,60104,Hobart,0.0,37262,15.8
+Tasmania,Hobart Inner,73,105,35,117,0,106,443,60105,Hobart,16.5,56041,79.0
+Tasmania,Sorell - Dodges Ferry,0,0,11,0,0,10,24,60106,Hobart,0.0,18773,12.8
+Tasmania,Launceston,57,138,79,47,3,146,468,60201,Launceston and North East,12.2,89511,52.3
+Tasmania,Meander Valley - West Tamar,4,0,29,37,0,13,85,60202,Launceston and North East,4.7,24745,34.4
+Tasmania,North East,0,3,52,3,4,7,70,60203,Launceston and North East,0.0,40470,17.3
+Tasmania,Central Highlands (Tas.),0,0,18,0,0,24,35,60301,South East,0.0,12747,27.5
+Tasmania,Huon - Bruny Island,5,0,34,11,0,30,75,60302,South East,6.7,22312,33.6
+Tasmania,South East Coast,0,0,7,0,0,0,4,60303,South East,0.0,7731,5.2
+Tasmania,Burnie - Ulverstone,27,76,57,3,10,21,193,60401,West and North West,14.0,51189,37.7
+Tasmania,Devonport,34,93,50,0,0,86,265,60402,West and North West,12.8,49544,53.5
+Tasmania,West Coast,0,6,15,0,0,35,51,60403,West and North West,0.0,18273,27.9
+Northern Territory,Darwin City,128,207,76,0,10,37,459,70101,Darwin,27.9,28507,161.0
+Northern Territory,Darwin Suburbs,143,754,127,0,8,125,1151,70102,Darwin,12.4,57630,199.7
+Northern Territory,Litchfield,20,0,75,0,9,54,156,70103,Darwin,12.8,22429,69.6
+Northern Territory,Palmerston,37,69,98,0,0,19,220,70104,Darwin,16.8,39405,55.8
+Northern Territory,Alice Springs,133,565,101,58,3,1718,2576,70201,Northern Territory - Outback,5.2,40558,635.1
+Northern Territory,Barkly,19,16,6,4,0,508,555,70202,Northern Territory - Outback,3.4,6006,924.1
+Northern Territory,Daly - Tiwi - West Arnhem,69,0,43,0,0,2666,2778,70203,Northern Territory - Outback,2.5,18000,1543.3
+Northern Territory,East Arnhem,25,40,12,0,0,2842,2920,70204,Northern Territory - Outback,0.9,14507,2012.8
+Northern Territory,Katherine,96,161,134,6,13,1932,2342,70205,Northern Territory - Outback,4.1,21109,1109.5
+Australian Capital Territory,Belconnen,0,193,83,29,0,128,432,80101,Australian Capital Territory,0.0,105623,40.9
+Australian Capital Territory,Canberra East,0,3,0,0,0,7,12,80103,Australian Capital Territory,0.0,1928,62.2
+Australian Capital Territory,Gungahlin,0,88,26,19,0,139,279,80104,Australian Capital Territory,0.0,87653,31.8
+Australian Capital Territory,North Canberra,51,343,47,85,0,27,553,80105,Australian Capital Territory,9.2,61160,90.4
+Australian Capital Territory,South Canberra,6,37,12,0,3,0,56,80106,Australian Capital Territory,10.7,31498,17.8
+Australian Capital Territory,Tuggeranong,0,104,65,0,0,83,246,80107,Australian Capital Territory,0.0,89054,27.6
+Australian Capital Territory,Weston Creek,0,55,15,0,0,0,76,80108,Australian Capital Territory,0.0,24487,31.0
+Australian Capital Territory,Woden Valley,4,42,15,6,0,44,107,80109,Australian Capital Territory,3.7,39079,27.4
+Australian Capital Territory,Molonglo,0,3,6,0,0,13,15,80110,Australian Capital Territory,0.0,11404,13.2
+Australian Capital Territory,Uriarra - Namadgi,0,0,0,0,0,13,13,80111,Australian Capital Territory,0.0,622,209.0
