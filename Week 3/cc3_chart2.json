@@ -2,13 +2,11 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
   "padding": {"left": 5, "top": 5, "bottom": 5, "right": 105},
   "title": {
-    "text": [
-      "Since 2022, home building has held steady at about 175,000 a year,",
-      "while the swing in people added came from migration, not births"
-    ],
+    "text": ["Rent growth rises when people added outrun new homes:", "it peaked in 2008 and again in 2024"],
     "subtitle": [
-      "Australia. Each point is the total for the year to that quarter. Completions are gross (before demolitions).",
-      "The Accord pace applies from July 2024. The total is the ABS population estimate, not exactly natural increase plus migration."
+      "Australia. Points are totals for the year to each quarter; rents are the annual change in the ABS CPI.",
+      "People added per home completed: 3.1 (Dec 2008), 1.9 (Dec 2019), 3.4 (Mar 2024). Rent growth tracks this",
+      "balance (correlation 0.83) more closely than migration alone (0.63). Timing is not proof of cause."
     ],
     "anchor": "start",
     "frame": "group",
@@ -20,9 +18,111 @@
   },
   "vconcat": [
     {
-      "title": {"text": "Homes completed per year", "anchor": "start", "fontSize": 13, "color": "#222222"},
+      "title": {
+        "text": "People added per year, and where they came from",
+        "anchor": "start",
+        "fontSize": 13,
+        "color": "#222222"
+      },
       "width": 640,
-      "height": 150,
+      "height": 165,
+      "transform": [
+        {
+          "window": [
+            {"op": "sum", "field": "people_added", "as": "t"},
+            {"op": "sum", "field": "net_overseas_migration", "as": "n"},
+            {"op": "sum", "field": "natural_increase", "as": "b"},
+            {"op": "count", "as": "quarters"}
+          ],
+          "frame": [-3, 0]
+        },
+        {"filter": "datum.quarters == 4"},
+        {"fold": ["t", "n", "b"], "as": ["measure", "value"]},
+        {
+          "calculate": "datum.measure == 't' ? 'Total people added' : (datum.measure == 'n' ? 'Net overseas migration' : 'Natural increase (births minus deaths)')",
+          "as": "series"
+        },
+        {"calculate": "'Year to ' + timeFormat(toDate(datum.date), '%b %Y')", "as": "period"}
+      ],
+      "layer": [
+        {
+          "mark": {"type": "line", "strokeWidth": 2.5},
+          "encoding": {
+            "x": {
+              "field": "date",
+              "type": "temporal",
+              "axis": {
+                "title": null,
+                "format": "%Y",
+                "tickCount": {"interval": "year", "step": 2},
+                "labelColor": "#596870",
+                "grid": false
+              }
+            },
+            "y": {
+              "field": "value",
+              "type": "quantitative",
+              "scale": {"domain": [-120000, 700000], "nice": false},
+              "axis": {
+                "title": null,
+                "format": ",.0f",
+                "gridColor": "#e5e5e5",
+                "labelColor": "#596870",
+                "values": [-100000, 0, 200000, 400000, 600000]
+              }
+            },
+            "color": {
+              "field": "series",
+              "type": "nominal",
+              "scale": {
+                "domain": ["Total people added", "Net overseas migration", "Natural increase (births minus deaths)"],
+                "range": ["#333333", "#0072B2", "#E69F00"]
+              },
+              "legend": {
+                "title": null,
+                "orient": "top",
+                "direction": "horizontal",
+                "symbolType": "stroke",
+                "symbolStrokeWidth": 3,
+                "symbolSize": 400,
+                "labelFontSize": 12,
+                "labelLimit": 400,
+                "columnPadding": 18
+              }
+            },
+            "strokeWidth": {"condition": {"test": "datum.series == 'Total people added'", "value": 1.8}, "value": 2.8},
+            "strokeDash": {"condition": {"test": "datum.series == 'Total people added'", "value": [5, 3]}, "value": [1, 0]}
+          }
+        },
+        {
+          "mark": {"type": "point", "opacity": 0, "size": 160},
+          "encoding": {
+            "x": {"field": "date", "type": "temporal"},
+            "y": {"field": "value", "type": "quantitative"},
+            "color": {"field": "series", "type": "nominal", "legend": null},
+            "tooltip": [
+              {"field": "series", "type": "nominal", "title": "Measure"},
+              {"field": "period", "type": "nominal", "title": "Period"},
+              {"field": "value", "type": "quantitative", "title": "People", "format": ",.0f"}
+            ]
+          }
+        },
+        {
+          "data": {"values": [{"y": 0}]},
+          "mark": {"type": "rule", "color": "#999999", "strokeWidth": 1},
+          "encoding": {"y": {"field": "y", "type": "quantitative"}}
+        }
+      ]
+    },
+    {
+      "title": {
+        "text": "Homes completed per year (gross, before demolitions)",
+        "anchor": "start",
+        "fontSize": 13,
+        "color": "#222222"
+      },
+      "width": 640,
+      "height": 115,
       "transform": [
         {
           "window": [{"op": "sum", "field": "homes_completed", "as": "homes_year"}, {"op": "count", "as": "quarters"}],
@@ -91,35 +191,15 @@
       ]
     },
     {
-      "title": {
-        "text": "People added per year, and where they came from",
-        "anchor": "start",
-        "fontSize": 13,
-        "color": "#222222"
-      },
+      "title": {"text": "Rent growth, annual % change (ABS CPI rents)", "anchor": "start", "fontSize": 13, "color": "#222222"},
       "width": 640,
-      "height": 210,
-      "transform": [
-        {
-          "window": [
-            {"op": "sum", "field": "people_added", "as": "t"},
-            {"op": "sum", "field": "net_overseas_migration", "as": "n"},
-            {"op": "sum", "field": "natural_increase", "as": "b"},
-            {"op": "count", "as": "quarters"}
-          ],
-          "frame": [-3, 0]
-        },
-        {"filter": "datum.quarters == 4"},
-        {"fold": ["t", "n", "b"], "as": ["measure", "value"]},
-        {
-          "calculate": "datum.measure == 't' ? 'Total people added' : (datum.measure == 'n' ? 'Net overseas migration' : 'Natural increase (births minus deaths)')",
-          "as": "series"
-        },
-        {"calculate": "'Year to ' + timeFormat(toDate(datum.date), '%b %Y')", "as": "period"}
-      ],
+      "height": 125,
+      "data": {
+        "url": "https://raw.githubusercontent.com/kjones2026/kjones2026.github.io/refs/heads/main/Week%203/CC3%20rents.csv"
+      },
       "layer": [
         {
-          "mark": {"type": "line", "strokeWidth": 2.5},
+          "mark": {"type": "line", "strokeWidth": 2.5, "color": "#7B3294"},
           "encoding": {
             "x": {
               "field": "date",
@@ -133,57 +213,68 @@
               }
             },
             "y": {
-              "field": "value",
+              "field": "rent_growth_pct",
               "type": "quantitative",
-              "scale": {"domain": [-120000, 700000], "nice": false},
+              "scale": {"domain": [-1.5, 10], "nice": false},
               "axis": {
                 "title": null,
-                "format": ",.0f",
+                "format": ".0f",
                 "gridColor": "#e5e5e5",
                 "labelColor": "#596870",
-                "values": [-100000, 0, 200000, 400000, 600000]
+                "values": [0, 2, 4, 6, 8]
               }
-            },
-            "color": {
-              "field": "series",
-              "type": "nominal",
-              "scale": {
-                "domain": ["Total people added", "Net overseas migration", "Natural increase (births minus deaths)"],
-                "range": ["#333333", "#0072B2", "#E69F00"]
-              },
-              "legend": {
-                "title": null,
-                "orient": "bottom",
-                "direction": "horizontal",
-                "symbolType": "stroke",
-                "symbolStrokeWidth": 3,
-                "symbolSize": 400,
-                "labelFontSize": 12,
-                "labelLimit": 400,
-                "columnPadding": 18
-              }
-            },
-            "strokeWidth": {"condition": {"test": "datum.series == 'Total people added'", "value": 1.8}, "value": 2.8},
-            "strokeDash": {"condition": {"test": "datum.series == 'Total people added'", "value": [5, 3]}, "value": [1, 0]}
+            }
           }
         },
         {
           "mark": {"type": "point", "opacity": 0, "size": 160},
           "encoding": {
             "x": {"field": "date", "type": "temporal"},
-            "y": {"field": "value", "type": "quantitative"},
-            "color": {"field": "series", "type": "nominal", "legend": null},
+            "y": {"field": "rent_growth_pct", "type": "quantitative"},
             "tooltip": [
-              {"field": "series", "type": "nominal", "title": "Measure"},
-              {"field": "period", "type": "nominal", "title": "Period"},
-              {"field": "value", "type": "quantitative", "title": "People", "format": ",.0f"}
+              {"field": "date", "type": "temporal", "title": "Quarter", "format": "%b %Y"},
+              {"field": "rent_growth_pct", "type": "quantitative", "title": "Rent growth (%)", "format": ".1f"}
             ]
+          }
+        },
+        {
+          "data": {
+            "values": [
+              {"date": "2008-12-31", "v": 8.4, "label": "8.4% (Dec 2008)"},
+              {"date": "2024-03-31", "v": 7.8, "label": "7.8% (Mar 2024)"},
+              {"date": "2026-09-30", "v": 3.6, "label": "3.6% (Sep 2026)"}
+            ]
+          },
+          "mark": {"type": "point", "filled": true, "size": 55, "color": "#7B3294"},
+          "encoding": {"x": {"field": "date", "type": "temporal"}, "y": {"field": "v", "type": "quantitative"}}
+        },
+        {
+          "data": {
+            "values": [
+              {"date": "2008-12-31", "v": 8.4, "label": "8.4% (Dec 2008)"},
+              {"date": "2024-03-31", "v": 7.8, "label": "7.8% (Mar 2024)"}
+            ]
+          },
+          "mark": {"type": "text", "dy": -11, "fontSize": 11, "fontWeight": "bold", "color": "#5a2670"},
+          "encoding": {
+            "x": {"field": "date", "type": "temporal"},
+            "y": {"field": "v", "type": "quantitative"},
+            "text": {"field": "label"}
           }
         },
         {
           "data": {"values": [{"y": 0}]},
           "mark": {"type": "rule", "color": "#999999", "strokeWidth": 1},
           "encoding": {"y": {"field": "y", "type": "quantitative"}}
+        },
+        {
+          "data": {"values": [{"date": "2026-09-30", "v": 3.6, "label": "3.6% (Sep 2026)"}]},
+          "mark": {"type": "text", "dy": 16, "align": "right", "fontSize": 11, "fontWeight": "bold", "color": "#5a2670"},
+          "encoding": {
+            "x": {"field": "date", "type": "temporal"},
+            "y": {"field": "v", "type": "quantitative"},
+            "text": {"field": "label"}
+          }
         }
       ]
     }
