@@ -1,0 +1,161 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 300,
+      "continuousHeight": 300
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "arc",
+        "innerRadius": 75,
+        "outerRadius": 135,
+        "stroke": "white",
+        "strokeWidth": 2
+      },
+      "encoding": {
+        "color": {
+          "field": "reason",
+          "legend": null,
+          "scale": {
+            "domain": [
+              "Family and domestic violence",
+              "Housing crisis",
+              "Inadequate or inappropriate dwelling conditions",
+              "Financial difficulties",
+              "Housing affordability stress",
+              "Relationship/family breakdown",
+              "All other reasons"
+            ],
+            "range": [
+              "#c8102e",
+              "#4d4d4d",
+              "#737373",
+              "#969696",
+              "#b5b5b5",
+              "#cccccc",
+              "#e3e3e3"
+            ]
+          },
+          "type": "nominal"
+        },
+        "order": {
+          "field": "slice_order",
+          "type": "quantitative"
+        },
+        "theta": {
+          "field": "clients",
+          "stack": true,
+          "type": "quantitative"
+        },
+        "tooltip": [
+          {
+            "field": "reason",
+            "title": "Main reason",
+            "type": "nominal"
+          },
+          {
+            "field": "share",
+            "format": ".1f",
+            "title": "Share of clients (%)",
+            "type": "quantitative"
+          },
+          {
+            "field": "clients",
+            "format": ",",
+            "title": "Clients",
+            "type": "quantitative"
+          }
+        ]
+      },
+      "transform": [
+        {
+          "filter": "datum.status == statusPick && datum.sex == sexPick"
+        },
+        {
+          "calculate": "datum.short + '\\n' + format(datum.share, '.0f') + '%'",
+          "as": "label"
+        }
+      ]
+    },
+    {
+      "mark": {
+        "type": "text",
+        "fontSize": 11,
+        "lineBreak": "\n",
+        "radius": 190
+      },
+      "encoding": {
+        "order": {
+          "field": "slice_order",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "label",
+          "type": "nominal"
+        },
+        "theta": {
+          "field": "clients",
+          "stack": true,
+          "type": "quantitative"
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.status == statusPick && datum.sex == sexPick"
+        },
+        {
+          "calculate": "datum.short + '\\n' + format(datum.share, '.0f') + '%'",
+          "as": "label"
+        }
+      ]
+    }
+  ],
+  "data": {
+    "url": "https://raw.githubusercontent.com/kjones2026/kjones2026.github.io/refs/heads/main/Project/shs_main_reasons_2024_25.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "height": 440,
+  "params": [
+    {
+      "name": "statusPick",
+      "bind": {
+        "input": "select",
+        "options": [
+          "All clients",
+          "Experiencing homelessness",
+          "At risk of homelessness"
+        ],
+        "name": "Clients "
+      },
+      "value": "All clients"
+    },
+    {
+      "name": "sexPick",
+      "bind": {
+        "input": "select",
+        "options": [
+          "All sexes",
+          "Females",
+          "Males"
+        ],
+        "name": "Sex "
+      },
+      "value": "All sexes"
+    }
+  ],
+  "title": {
+    "text": {
+      "expr": "'Main reason for seeking help from homelessness services, 2024-25: ' + statusPick + ', ' + sexPick"
+    },
+    "subtitle": [
+      "Each client gives one main reason, so the slices add up to 100%. Family and domestic violence is in red.",
+      "Source: AIHW, Specialist homelessness services annual report 2024-25 (tables CLIENTS.22 and CLIENTS.23)"
+    ]
+  },
+  "width": 540,
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.4.1.json"
+}
