@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project | Billie Jones</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Karla:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/vega@6.4.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@6.4.3"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@7.3.0"></script>
+
+  <style>
+    /* Small additions for this page only */
+    .placeholder { color: var(--muted); font-style: italic; }
+    .chart-item { max-width: 100%; }
+    #word-count {
+      position: fixed; right: 1rem; bottom: 1rem; z-index: 10;
+      background: var(--ink); color: var(--white);
+      padding: 0.5rem 0.9rem; border-radius: 6px; font-weight: 700;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main">
+      <a class="nav-name" href="index.html">Billie Jones</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="project.html" aria-current="page">Projects</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="portfolio.html">PP434 Weekly Tasks</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Project</h1>
+    <!-- Replace the title above with your own project title -->
+
+    <ul class="contact-row">
+      <li><a href="https://github.com/kjones2026/kjones2026.github.io">GitHub repository</a></li>
+      <li><a href="https://github.com/kjones2026/kjones2026.github.io/tree/main/Project">Project data and charts</a></li>
+      <li><a href="PASTE-YOUR-COLAB-LINK-HERE">Colab notebook</a></li>
+    </ul>
+
+    <!-- ============ TEXT: 800 words in total across all four sections (add ?words to the page address to see a live count) ============ -->
+
+    <section id="aims">
+      <h2>Aims</h2>
+      <!-- Your aims: the goal of your project. -->
+      <p class="count placeholder">[Write your aims here.]</p>
+    </section>
+
+    <!-- ============ CHARTS (5 to 8 allowed; each loads from the Project folder) ============ -->
+
+    <section id="charts">
+      <h2>Charts</h2>
+      <div class="chart-row stacked">
+
+        <div class="chart-item">
+          <h3>Chart 1</h3>
+          <figure id="Figure1" aria-label="Chart 1"></figure>
+          <p class="count placeholder">[Optional: a sentence on this chart.]</p>
+        </div>
+
+        <div class="chart-item">
+          <h3>Chart 2</h3>
+          <figure id="Figure2" aria-label="Chart 2"></figure>
+          <p class="count placeholder">[Optional: a sentence on this chart.]</p>
+        </div>
+
+        <div class="chart-item">
+          <h3>Chart 3</h3>
+          <figure id="Figure3" aria-label="Chart 3"></figure>
+          <p class="count placeholder">[Optional: a sentence on this chart.]</p>
+        </div>
+
+        <div class="chart-item">
+          <h3>Chart 4</h3>
+          <figure id="Figure4" aria-label="Chart 4"></figure>
+          <p class="count placeholder">[Optional: a sentence on this chart.]</p>
+        </div>
+
+        <div class="chart-item">
+          <h3>Chart 5</h3>
+          <figure id="Figure5" aria-label="Chart 5"></figure>
+          <p class="count placeholder">[Optional: a sentence on this chart.]</p>
+        </div>
+
+        <div class="chart-item">
+          <h3>Chart 6</h3>
+          <figure id="Figure6" aria-label="Chart 6"></figure>
+          <p class="count placeholder">[Optional: a sentence on this chart.]</p>
+        </div>
+
+        <div class="chart-item">
+          <h3>Chart 7</h3>
+          <figure id="Figure7" aria-label="Chart 7"></figure>
+          <p class="count placeholder">[Optional: a sentence on this chart.]</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="data">
+      <h2>Data</h2>
+      <!-- Your data: the sources you used, how you accessed them, and notes on automation and/or replication. -->
+      <p class="count placeholder">[Write about your data here.]</p>
+    </section>
+
+    <section id="tools">
+      <h2>Tools</h2>
+      <!-- Your tools: how you cleaned and analysed the data, the tools you used, any challenges and how you overcame them. -->
+      <p class="count placeholder">[Write about your tools here.]</p>
+    </section>
+
+    <section id="conclusions">
+      <h2>Conclusions</h2>
+      <!-- Your conclusions: what you take from all of this. -->
+      <p class="count placeholder">[Write your conclusions here.]</p>
+    </section>
+
+  </main>
+
+  <script>
+    // One list of charts, embedded by one loop (the files are in the Project folder of the repository)
+    const charts = [
+      { id: "Figure1", file: "Project/project_chart1_shs_clients.json" },
+      { id: "Figure2", file: "Project/project_chart2_census_groups.json" },
+      { id: "Figure3", file: "Project/project_chart3_homeless_map.json" },
+      { id: "Figure4", file: "Project/project_chart4_main_reasons.json" },
+      { id: "Figure5", file: "Project/project_chart5_vulnerabilities.json" },
+      { id: "Figure6", file: "Project/project_chart7_housing_need_met.json" },
+      { id: "Figure7", file: "Project/project_chart8_supply_and_demand.json" }
+    ];
+
+    charts.forEach(function (chart) {
+      vegaEmbed("#" + chart.id, chart.file, { actions: { export: true, source: false, compiled: false, editor: false } })
+        .catch(function (error) {
+          console.error(chart.file, error);
+          document.getElementById(chart.id).textContent = "This chart could not be loaded: " + chart.file;
+        });
+    });
+
+    // Word counter: add ?words to the page address (project.html?words) to see it. It counts the text in the sections you write.
+    if (new URLSearchParams(window.location.search).has("words")) {
+      var total = 0;
+      document.querySelectorAll(".count").forEach(function (element) {
+        var words = element.textContent.trim().split(/\s+/).filter(Boolean).length;
+        total += words;
+      });
+      var box = document.createElement("div");
+      box.id = "word-count";
+      box.textContent = "Words: " + total + " of 800";
+      document.body.appendChild(box);
+    }
+  </script>
+
+</body>
+</html>
