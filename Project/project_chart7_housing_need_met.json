@@ -1,0 +1,194 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 300,
+      "continuousHeight": 300
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "stroke": "white",
+        "strokeWidth": 1.5
+      },
+      "encoding": {
+        "color": {
+          "field": "status",
+          "legend": {
+            "orient": "top",
+            "title": null
+          },
+          "scale": {
+            "domain": [
+              "Provided",
+              "Referred only",
+              "Not provided or referred"
+            ],
+            "range": [
+              "#2ca25f",
+              "#bdbdbd",
+              "#de2d26"
+            ]
+          },
+          "sort": [
+            "Provided",
+            "Referred only",
+            "Not provided or referred"
+          ],
+          "type": "nominal"
+        },
+        "order": {
+          "field": "status_order",
+          "type": "quantitative"
+        },
+        "tooltip": [
+          {
+            "field": "service",
+            "title": "Housing type",
+            "type": "nominal"
+          },
+          {
+            "field": "status",
+            "title": "What happened",
+            "type": "nominal"
+          },
+          {
+            "field": "share",
+            "format": ".1f",
+            "title": "Share of those who needed it (%)",
+            "type": "quantitative"
+          },
+          {
+            "field": "clients",
+            "format": ",",
+            "title": "Clients",
+            "type": "quantitative"
+          },
+          {
+            "field": "need",
+            "format": ",",
+            "title": "Clients who needed this",
+            "type": "quantitative"
+          }
+        ],
+        "x": {
+          "axis": {
+            "tickCount": 5
+          },
+          "field": "share",
+          "scale": {
+            "domain": [
+              0,
+              100
+            ]
+          },
+          "stack": "zero",
+          "title": "Percentage of clients who needed this type of housing",
+          "type": "quantitative"
+        },
+        "y": {
+          "axis": {
+            "labelLimit": 320
+          },
+          "field": "service",
+          "sort": [
+            "Short-term or emergency accommodation",
+            "Medium-term/transitional housing",
+            "Long-term housing"
+          ],
+          "title": null,
+          "type": "nominal"
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.client_group == groupPick"
+        },
+        {
+          "calculate": "format(datum.share, '.0f') + '%'",
+          "as": "label"
+        }
+      ]
+    },
+    {
+      "mark": {
+        "type": "text",
+        "fontSize": 12,
+        "fontWeight": "bold"
+      },
+      "encoding": {
+        "color": {
+          "condition": {
+            "test": "datum.status == 'Referred only'",
+            "value": "#222222"
+          },
+          "value": "white"
+        },
+        "text": {
+          "field": "label",
+          "type": "nominal"
+        },
+        "x": {
+          "field": "x_mid",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "service",
+          "sort": [
+            "Short-term or emergency accommodation",
+            "Medium-term/transitional housing",
+            "Long-term housing"
+          ],
+          "type": "nominal"
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.client_group == groupPick"
+        },
+        {
+          "calculate": "format(datum.share, '.0f') + '%'",
+          "as": "label"
+        },
+        {
+          "filter": "datum.share >= 6"
+        }
+      ]
+    }
+  ],
+  "data": {
+    "url": "https://raw.githubusercontent.com/kjones2026/kjones2026.github.io/refs/heads/main/Project/shs_unmet_need_2024_25.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "height": 200,
+  "params": [
+    {
+      "name": "groupPick",
+      "bind": {
+        "input": "select",
+        "options": [
+          "All clients",
+          "Current mental health issue",
+          "Experienced family and domestic violence",
+          "Problematic drug or alcohol use"
+        ],
+        "name": "Clients "
+      },
+      "value": "All clients"
+    }
+  ],
+  "title": {
+    "text": {
+      "expr": "'Is the need for housing help being met? ' + groupPick"
+    },
+    "subtitle": [
+      "Clients who needed each type of housing, by what happened, Australia, 2024-25.",
+      "Source: AIHW, Specialist homelessness services annual report 2024-25 (tables CLIENTS.24, FDV.2, MH.2, SUB.2)"
+    ]
+  },
+  "width": 480,
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.4.1.json"
+}
