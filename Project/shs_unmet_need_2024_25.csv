@@ -1,0 +1,37 @@
+client_group,service,status,clients,need,share,service_order,status_order,x_mid
+All clients,Short-term or emergency accommodation,Provided,68819,116178,59.2,0,0,29.6
+All clients,Short-term or emergency accommodation,Referred only,11123,116178,9.6,0,1,64.0
+All clients,Short-term or emergency accommodation,Not provided or referred,36236,116178,31.2,0,2,84.4
+All clients,Medium-term/transitional housing,Provided,19457,86769,22.4,1,0,11.2
+All clients,Medium-term/transitional housing,Referred only,14900,86769,17.2,1,1,31.0
+All clients,Medium-term/transitional housing,Not provided or referred,52412,86769,60.4,1,2,69.8
+All clients,Long-term housing,Provided,4407,113368,3.9,2,0,2.0
+All clients,Long-term housing,Referred only,27078,113368,23.9,2,1,15.8
+All clients,Long-term housing,Not provided or referred,81883,113368,72.2,2,2,63.9
+Current mental health issue,Short-term or emergency accommodation,Provided,23667,43337,54.6,0,0,27.3
+Current mental health issue,Short-term or emergency accommodation,Referred only,5158,43337,11.9,0,1,60.6
+Current mental health issue,Short-term or emergency accommodation,Not provided or referred,14512,43337,33.5,0,2,83.2
+Current mental health issue,Medium-term/transitional housing,Provided,7385,38122,19.4,1,0,9.7
+Current mental health issue,Medium-term/transitional housing,Referred only,7556,38122,19.8,1,1,29.3
+Current mental health issue,Medium-term/transitional housing,Not provided or referred,23181,38122,60.8,1,2,69.6
+Current mental health issue,Long-term housing,Provided,1933,47437,4.1,2,0,2.0
+Current mental health issue,Long-term housing,Referred only,13032,47437,27.5,2,1,17.8
+Current mental health issue,Long-term housing,Not provided or referred,32472,47437,68.5,2,2,65.8
+Experienced family and domestic violence,Short-term or emergency accommodation,Provided,35642,51721,68.9,0,0,34.4
+Experienced family and domestic violence,Short-term or emergency accommodation,Referred only,4305,51721,8.3,0,1,73.0
+Experienced family and domestic violence,Short-term or emergency accommodation,Not provided or referred,11774,51721,22.8,0,2,88.6
+Experienced family and domestic violence,Medium-term/transitional housing,Provided,8972,34482,26.0,1,0,13.0
+Experienced family and domestic violence,Medium-term/transitional housing,Referred only,6183,34482,17.9,1,1,35.0
+Experienced family and domestic violence,Medium-term/transitional housing,Not provided or referred,19327,34482,56.0,1,2,71.9
+Experienced family and domestic violence,Long-term housing,Provided,1309,40778,3.2,2,0,1.6
+Experienced family and domestic violence,Long-term housing,Referred only,10527,40778,25.8,2,1,16.1
+Experienced family and domestic violence,Long-term housing,Not provided or referred,28942,40778,71.0,2,2,64.5
+Problematic drug or alcohol use,Short-term or emergency accommodation,Provided,9761,15439,63.2,0,0,31.6
+Problematic drug or alcohol use,Short-term or emergency accommodation,Referred only,1647,15439,10.7,0,1,68.6
+Problematic drug or alcohol use,Short-term or emergency accommodation,Not provided or referred,4031,15439,26.1,0,2,87.0
+Problematic drug or alcohol use,Medium-term/transitional housing,Provided,2331,12383,18.8,1,0,9.4
+Problematic drug or alcohol use,Medium-term/transitional housing,Referred only,2615,12383,21.1,1,1,29.4
+Problematic drug or alcohol use,Medium-term/transitional housing,Not provided or referred,7437,12383,60.1,1,2,70.0
+Problematic drug or alcohol use,Long-term housing,Provided,673,14590,4.6,2,0,2.3
+Problematic drug or alcohol use,Long-term housing,Referred only,4409,14590,30.2,2,1,19.7
+Problematic drug or alcohol use,Long-term housing,Not provided or referred,9508,14590,65.2,2,2,67.4
